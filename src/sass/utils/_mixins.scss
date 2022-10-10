@@ -1,0 +1,16 @@
+@mixin font-source($size: false, $lh: false, $weight: false) {
+  @if $size {
+    font-size: $size;
+  }
+  @if $lh {
+    line-height: $lh;
+  }
+  @if $weight {
+    font-weight: $weight;
+  }
+}
+
+@mixin section-padding($pt: 50px, $pb: 50px) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
