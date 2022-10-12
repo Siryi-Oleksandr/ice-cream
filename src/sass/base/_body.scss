@@ -5,7 +5,7 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 16px;
   width: 100%;
 
   outline: 1px solid red;
@@ -16,6 +16,10 @@ body {
 
   @media screen and (min-width: 480px) {
     width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
   }
 
   @media screen and (min-width: 1200px) {

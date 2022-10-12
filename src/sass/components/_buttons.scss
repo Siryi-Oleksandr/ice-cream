@@ -1,0 +1,38 @@
+// кнопка мобільна, планшетна версії
+.btn__prod {
+  margin: 0;
+  padding: 9px 10px;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 8px;
+  line-height: calc(10 / 8);
+
+  border: 2px solid $btn-def-color;
+  border-radius: 8px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    border-color: $btn-accent-color;
+  }
+
+  &:focus {
+    outline-color: $btn-accent-color;
+    color: $txt-secondary-color;
+  }
+}
+
+.btn__prod--disabled {
+  margin: 0;
+  padding: 9px 10px;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 8px;
+  line-height: calc(10 / 8);
+
+  border: 2px solid $btn-disabled-color;
+  border-radius: 8px;
+  background-color: transparent;
+}
