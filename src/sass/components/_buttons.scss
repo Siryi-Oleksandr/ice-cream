@@ -9,14 +9,14 @@
 
   border: 2px solid $btn-def-color;
   background-color: $btn-def-color;
-  cursor: pointer;
+  cursor: url(../images/icon-img/cursor-hover.png), pointer;
 
   &::after {
     content: '';
     display: flex;
     width: 12px;
     height: 12px;
-    background-image: url(../images/icons/more-black.png);
+    background-image: url(../images/icon-img/more-black.png);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -32,7 +32,7 @@
     color: $txt-secondary-color;
 
     &:focus::after {
-      background-image: url(../images/icons/more-white.png);
+      background-image: url(../images/icon-img/more-white.png);
     }
   }
 }
@@ -48,7 +48,7 @@
     display: flex;
     width: 12px;
     height: 12px;
-    background-image: url(../images/icons/more-black.png);
+    background-image: url(../images/icon-img/more-black.png);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -61,14 +61,14 @@
 
   border: 2px solid $btn-def-color;
   background-color: transparent;
-  cursor: pointer;
+  cursor: url(../images/icon-img/cursor-hover.png), pointer;
 
   &::after {
     content: '';
     display: flex;
     width: 12px;
     height: 12px;
-    background-image: url(../images/icons/more-black.png);
+    background-image: url(../images/icon-img/more-black.png);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -82,7 +82,7 @@
     color: $txt-secondary-color;
 
     &:focus::after {
-      background-image: url(../images/icons/more-white.png);
+      background-image: url(../images/icon-img/more-white.png);
     }
   }
 }
@@ -100,7 +100,7 @@
     display: flex;
     width: 12px;
     height: 12px;
-    background-image: url(../images/icons/more-black.png);
+    background-image: url(../images/icon-img/more-black.png);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -123,7 +123,7 @@
   border: 2px solid $btn-def-color;
   border-radius: 8px;
   background-color: transparent;
-  cursor: pointer;
+  cursor: url(../images/icon-img/cursor-hover.png), pointer;
 
   @media screen and (min-width: $lg) {
     padding: 12px 32px;
@@ -187,7 +187,7 @@
 
   border: none;
   background-color: transparent;
-  cursor: pointer;
+  cursor: url(../images/icon-img/cursor-hover.png), pointer;
 
   @media screen and (min-width: $lg) {
     padding: 12px 32px;
