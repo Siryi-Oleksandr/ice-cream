@@ -4,3 +4,18 @@
   justify-content: center;
 }
 
+%btn {
+  margin: 0;
+  padding: 12px 34px;
+
+  display: flex;
+  gap: 7px;
+  align-items: center;
+
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+
+  border-radius: 10px;
+}

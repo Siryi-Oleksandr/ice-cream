@@ -1,9 +1,121 @@
-// кнопка мобільна, планшетна версії
-.btn__prod {
+/**
+  |============================
+  | Кнопки Read more, Our Locations, Franchise, Buy now
+  |============================
+*/
+
+.btn {
+  @extend %btn;
+
+  border: 2px solid $btn-def-color;
+  background-color: $btn-def-color;
+  cursor: url(../images/icon-img/cursor-hover.png), pointer;
+
+  &::after {
+    content: '';
+    display: flex;
+    width: 12px;
+    height: 12px;
+    background-image: url(../images/icon-img/more-black.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &:hover {
+    border-color: $btn-accent-color;
+    background-color: $btn-accent-color;
+  }
+
+  &:focus {
+    outline-color: $btn-accent-color;
+    background-color: $btn-accent-color;
+    color: $txt-secondary-color;
+
+    &:focus::after {
+      background-image: url(../images/icon-img/more-white.png);
+    }
+  }
+}
+
+.btn--disabled {
+  @extend %btn;
+
+  border: 2px solid $btn-disabled-color;
+  background-color: $btn-disabled-color;
+
+  &::after {
+    content: '';
+    display: flex;
+    width: 12px;
+    height: 12px;
+    background-image: url(../images/icon-img/more-black.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+// КНОПКА Franchise
+
+.btn--transparent {
+  @extend %btn;
+
+  border: 2px solid $btn-def-color;
+  background-color: transparent;
+  cursor: url(../images/icon-img/cursor-hover.png), pointer;
+
+  &::after {
+    content: '';
+    display: flex;
+    width: 12px;
+    height: 12px;
+    background-image: url(../images/icon-img/more-black.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &:hover {
+    border-color: $btn-accent-color;
+  }
+
+  &:focus {
+    outline-color: $btn-accent-color;
+    color: $txt-secondary-color;
+
+    &:focus::after {
+      background-image: url(../images/icon-img/more-white.png);
+    }
+  }
+}
+
+// КНОПКА Franchise неактивна
+
+.btn--transparent-disabled {
+  @extend %btn;
+
+  border: 2px solid $btn-disabled-color;
+  background-color: transparent;
+
+  &::after {
+    content: '';
+    display: flex;
+    width: 12px;
+    height: 12px;
+    background-image: url(../images/icon-img/more-black.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+/**
+  |============================
+  | Кнопка PRODUCTS
+  |============================
+*/
+
+.btn-prod {
   margin: 0;
   padding: 9px 10px;
 
-  font-family: 'Montserrat';
   font-weight: 600;
   font-size: 8px;
   line-height: calc(10 / 8);
@@ -11,7 +123,16 @@
   border: 2px solid $btn-def-color;
   border-radius: 8px;
   background-color: transparent;
-  cursor: pointer;
+  cursor: url(../images/icon-img/cursor-hover.png), pointer;
+
+  @media screen and (min-width: $lg) {
+    padding: 12px 32px;
+
+    font-size: 14px;
+    line-height: calc(18 / 14);
+
+    border-radius: 10px;
+  }
 
   &:hover {
     border-color: $btn-accent-color;
@@ -23,16 +144,87 @@
   }
 }
 
-.btn__prod--disabled {
+// Кнопка PRODUCTS неактивна
+
+.btn-prod--disabled {
   margin: 0;
   padding: 9px 10px;
 
-  font-family: 'Montserrat';
   font-weight: 600;
   font-size: 8px;
   line-height: calc(10 / 8);
+  color: $txt-black-color;
 
   border: 2px solid $btn-disabled-color;
   border-radius: 8px;
   background-color: transparent;
+
+  @media screen and (min-width: $lg) {
+    padding: 12px 32px;
+
+    font-size: 14px;
+    line-height: calc(18 / 14);
+
+    border-radius: 10px;
+  }
+}
+
+/**
+  |============================
+  | Кнопка How it’s made?
+  |============================
+*/
+
+.btn-made {
+  margin: 0;
+  padding: 9px 10px;
+
+  font-weight: 600;
+  font-size: 8px;
+  line-height: calc(10 / 8);
+  text-decoration: underline;
+  color: $btn-def-color;
+
+  border: none;
+  background-color: transparent;
+  cursor: url(../images/icon-img/cursor-hover.png), pointer;
+
+  @media screen and (min-width: $lg) {
+    padding: 12px 32px;
+
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+
+  &:hover {
+    color: $btn-accent-color;
+  }
+
+  &:focus {
+    outline: none;
+    color: $txt-secondary-color;
+  }
+}
+
+// Кнопка How it’s made? неактивна
+
+.btn-made--disabled {
+  margin: 0;
+  padding: 9px 10px;
+
+  font-weight: 600;
+  font-size: 8px;
+  line-height: calc(10 / 8);
+  text-decoration: underline;
+  color: $btn-disabled-color;
+
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: $lg) {
+    padding: 12px 32px;
+
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
 }
