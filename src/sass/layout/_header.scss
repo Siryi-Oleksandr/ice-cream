@@ -1,5 +1,5 @@
 .header{
-    background-color: #84A178; 
+    background-color: $bg-primary-color; 
    
 }
 
@@ -9,14 +9,33 @@
     align-items: center;
 
     padding: 12px 20px;
+
+    @media screen and (min-width: 768px) {
+        padding: 20px 32px;
+    }
+
+    
 }
 
 .header__nav{
     display: none;
 }
 
+.header__buttons{
+    @media screen and(min-width: 768px){
+        display: flex;
+        align-items: center;
+    }
+    
+}
+
 .header__btn{
     display: none;
+
+    @media screen and(min-width:768px) {
+        display: flex;
+        margin-left: 32px;
+    }
 }
 
 .btn-burger{
