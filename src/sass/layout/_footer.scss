@@ -59,12 +59,14 @@
 .footer-aside__tnarrow {
     width: 100%;
     border-top: 1px solid #E1E1E1;
+    margin-bottom: 16px;
     
 }
 
 .footer-aside__title {
 
     width: 280px;
+    margin: auto;
     padding-left: 20px;
     padding-right: 20px;
     font-weight: 700;
@@ -72,6 +74,4 @@
     line-height: 1.52;
     text-align: center;
     color: #7A7A7A;
-    margin-top: 16px;
-    margin-bottom: 62px;
 }
