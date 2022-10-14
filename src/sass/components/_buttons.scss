@@ -228,3 +228,29 @@
     line-height: calc(17 / 14);
   }
 }
+
+/**
+  |============================
+  | КНОПКА ARROW (section Products)
+  |============================
+*/
+
+.btn-arrow {
+  margin: 0;
+  padding: 20px 34px;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  &:hover > .btn-arrow__icon {
+    transform: scaleX(1.25);
+  }
+
+  &:focus > .btn-arrow__icon {
+    transform: scale(1.25);
+  }
+}
+.btn-arrow__icon {
+  transition: transform $animation;
+}
