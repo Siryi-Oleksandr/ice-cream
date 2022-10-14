@@ -228,3 +228,51 @@
     line-height: calc(17 / 14);
   }
 }
+
+/**
+  |============================
+  | КНОПКА ARROW (section Products, Hero)
+  |============================
+*/
+
+.btn-arrow {
+  margin: 0;
+  padding: 20px 34px;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  &:hover > .btn-arrow__icon {
+    transform: scaleX(1.25);
+  }
+
+  &:focus > .btn-arrow__icon {
+    transform: scale(1.25);
+  }
+}
+
+// Кнопка секції HERO
+
+.btn-arrow--white {
+  margin: 0;
+  padding: 20px 34px;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: $txt-white-color;
+
+  &:hover > .btn-arrow__icon {
+    transform: scaleX(1.25);
+  }
+
+  &:focus > .btn-arrow__icon {
+    transform: scale(1.25);
+  }
+}
+
+.btn-arrow__icon {
+  transition: transform $animation;
+  fill: currentColor;
+}
