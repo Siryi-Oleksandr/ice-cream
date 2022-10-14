@@ -1,0 +1,123 @@
+//ДЛЯ ТЕЛЕФОНУ
+.advantages{
+    padding-top: 42px;
+    padding-bottom: 60px;
+}
+
+
+//ЗАЛИЛА КОЛІР для видимості тексту !!!!!!!!!!!!
+.advantages__list {
+    background-color: aqua;
+}
+
+.advantages__item{
+    padding-bottom: 10px;  
+}
+
+.advantages__item::before {
+    content: "";
+    
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    
+    
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    background-color: $bg-png-color;
+}
+
+.cow__img::before{
+    background-image:url("../images/content-img/advantages/advantages-1@1x.png");
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url("../images/content-img/advantages/advantages-1@2x.png");
+        }
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 36px 36px;
+        padding: 7px;
+    }
+
+.gantel__img::before{
+   
+
+    background-image: url("../images/content-img/advantages/advantages-2@1x.png");
+    
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url("../images/content-img/advantages/advantages-2@2x.png");
+        }
+    
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 36px 36px;
+        padding: 7px;
+    }
+
+.ice__img::before{
+    
+    background-image: url("../images/content-img/advantages/advantages-3@1x.png");
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url("../images/content-img/advantages/advantages-3@2x.png");
+    }
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 36px 36px;
+        padding: 7px;
+}
+
+/*
+МОЖНА картинки поставити і так аде якщо потім мінятимуться місцями,то багато треба буде переписувати
+
+.advantages__item:nth-child(1)::before{
+   
+    background-image: url(../images/content-img/advantages/advantages-1@1x.png);
+}
+.advantages__item:nth-child(2)::before {
+    background-image: url(../images/content-img/advantages/advantages-2@1x.png);
+}
+.advantages__item:nth-child(3)::before {
+    background-image: url(../images/content-img/advantages/advantages-3@1x.png);
+}
+*/
+
+
+.advantages__quantity {
+   @include font-source(36px, calc(42 / 36), 700);
+    font-family: 'Roboto';
+    
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+
+    margin-bottom: 18px;
+    
+    color: $txt-secondary-color;
+
+}
+
+.advantages__subtitle {
+    @include font-source(12px, calc(20 / 12), 700);
+        font-family: 'Montserrat';
+           
+        text-align: center;
+        
+        color: $txt-secondary-color;
+       
+        margin-left: auto;
+        margin-right: auto;
+
+        width:230px;
+}
