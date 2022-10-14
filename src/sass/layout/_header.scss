@@ -1,1 +1,30 @@
+.header{
+    background-color: #84A178; 
+   
+}
 
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 20px;
+}
+
+.header__nav{
+    display: none;
+}
+
+.header__btn{
+    display: none;
+}
+
+.btn-burger{
+    display: block;
+
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+}
