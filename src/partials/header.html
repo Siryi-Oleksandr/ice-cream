@@ -1,12 +1,64 @@
-<header>
+<header class="header">
   <div class="container">
-    <button class="btn-prod">Products</button>
-    <button class="btn-prod--disabled">Products</button>
-    <button class="btn">Read more</button>
-    <button class="btn--disabled">Read more</button>
-    <button class="btn--transparent">Franchise</button>
-    <button class="btn--transparent-disabled">Franchise</button>
-    <button class="btn-made">How it’s made?</button>
-    <button class="btn-made--disabled">How it’s made?</button>
+    <a href="./index.html" class="logo">
+      <picture>
+        <!-- desktop -->
+        <source
+          media="(min-width:1200px)"
+          srcset="
+            ./images/icon-img/logo/logo_1200@1x.png 1x,
+            ./images/icon-img/logo/logo_1200@2x.png 2x
+          "
+          type="image/png"
+        />
+
+        <!-- tablet -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/icon-img/logo/logo_768@1x.png 1x,
+            ./images/icon-img/logo/logo_768@2x.png 2x
+          "
+          type="image/png"
+        />
+
+        <!-- mobile -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/icon-img/logo/logo_480@1x.png 1x,
+            ./images/icon-img/logo/logo_480@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="logo__img"
+          src="./images/icon-img/logo/logo_480@1x.png"
+          alt="logo"
+        />
+      </picture>
+    </a>
+    <nav class="header__nav">
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="#home" class="header__link">Home</a>
+        </li>
+        <li class="header__item">
+          <a href="#how" class="header__link">How it’s made|</a>
+        </li>
+        <li class="header__item">
+          <a href="#products" class="header__link">Our products</a>
+        </li>
+        <li class="header__item">
+          <a href="#contact" class="header__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="btn">Buy now</button>
+    <button class="btn-burger">
+      <svg class="btn-burger__icon" width="60" height="65">
+        <use href="./images/icon-img/sprite.svg#burger"></use>
+      </svg>
+    </button>
   </div>
 </header>
