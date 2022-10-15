@@ -1,1 +1,149 @@
+.contacts {
+  padding-top: 24px;
+  padding-bottom: 20px;
+
+  &__list {
+      display: grid;
+      gap: 20px;
+      justify-content: center;
+      width: 100%;
+      
+
+      margin-bottom: 30px;
+      grid-template-columns: 280px;
+      
+      
+    }
+
+
+  &__item {
+      display: grid;
+      width: 100%;
+  
+      justify-content: start;
+      justify-items: start;
+     
+  
+  
+      padding: 40px 32px;
+  
+      border-radius: 24px;
+      background: $txt-secondary-color;
+      box-shadow: 0px 8px 30px $shadow-color;
+  
+    }
+
+
+  &__category {
+    
+          background-color: $btn-def-color;
+          display: inline-flex;
+          padding: 0 25px;
+          
+          letter-spacing: 0.04em;
+          border-radius: 4px;
+    
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 1.86;
+          
+    
+        }
+
+
+   &__link {
+      
+              
+              
+              font-weight: 500;
+              font-size: 12px;
+              line-height: 1.83;
+              letter-spacing: 0.04em;
+              color: $txt-address-color;
+              transition: text-decoration $animation;
+
+              
+            }
+    &__link:hover,
+    &__link:focus {
+      text-decoration: underline;
+      cursor: url(../images/icon-img/cursor-hover.png), pointer;
+    }
+
+
+    &__undertitle {
+          display: inline-flex;
+
+          
+    
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 1.86;
+          letter-spacing: 0.04em;
+    
+          
+        }
+
+    &__grid {
+      display:grid;
+      gap: 8px;
+      width: 100%;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      align-self: stretch;
+      grid-template-rows: repeat(280px);
+      grid-template-columns: 216px;
+    }
+}
+
+
+.contacts-address {
+  padding-top: 24px;
+  &__list{
+    
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.5;
+  }
+}
+
+
+
+
+.contacts-workday {
+  
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    width: 100%;
+
+  border-bottom: 1px solid $bd-primary-color;
+  border-top: 1px solid $bd-primary-color;
+
+
+
+  &__time {
+    
+      color: $txt-disabled-color;
+
+  }
+}
+.contacts-buttons {
+  display: grid;
+  gap: 16px;
+  justify-content: center;
+}
+.btn-contacts {
+  width: 196px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+}
+
+
+
+
 
