@@ -1,1 +1,99 @@
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 999;
 
+    height: 61px;
+    background-color: rgba(132, 161, 120, 0.9);
+  
+
+
+    @media screen and (min-width: 768px) {
+        height: 86px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 81px;
+    }
+
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 20px;
+
+    @media screen and (min-width: 768px) {
+        padding: 20px 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 8px 16px;
+    }
+}
+
+.header__nav{
+    display: none;
+    @media screen and(min-width:1200px) {
+        display: flex;
+       
+    }
+}
+
+.header__list{
+    display: flex;
+    gap: 27px;
+
+    color: $txt-secondary-color;
+    font-weight: 700;
+    line-height: calc(20 / 16);
+
+}   
+
+.header__link{
+    transition: color $animation;
+    
+    &:focus,
+    &:hover {
+    cursor: url(../images/icon-img/cursor-hover.png), pointer;
+    color: $txt-accent-color;    
+    }
+}
+
+
+.header__buttons{
+    @media screen and(min-width: 768px){
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+    
+}
+
+.header__btn{
+    display: none;
+    transition: background-color $animation, border-color $animation;
+
+    @media screen and(min-width:768px) {
+        display: flex;
+    }
+}
+
+.btn-burger{
+    display: block;
+
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+
+    @media screen and(min-width:1200px) {
+        display: none;
+    }
+}

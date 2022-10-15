@@ -113,6 +113,8 @@
 */
 
 .btn-prod {
+  display: inline-flex;
+
   margin: 0;
   padding: 9px 10px;
 
@@ -139,7 +141,8 @@
   }
 
   &:focus {
-    outline-color: $btn-accent-color;
+    outline: none;
+    border-color: $btn-accent-color;
     color: $txt-secondary-color;
   }
 }
@@ -147,6 +150,8 @@
 // Кнопка PRODUCTS неактивна
 
 .btn-prod--disabled {
+  display: inline-flex;
+
   margin: 0;
   padding: 9px 10px;
 
@@ -176,6 +181,8 @@
 */
 
 .btn-made {
+  display: inline-flex;
+
   margin: 0;
   padding: 9px 10px;
 
@@ -209,6 +216,8 @@
 // Кнопка How it’s made? неактивна
 
 .btn-made--disabled {
+  display: inline-flex;
+
   margin: 0;
   padding: 9px 10px;
 
