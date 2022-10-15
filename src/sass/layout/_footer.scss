@@ -32,6 +32,9 @@
         line-height: 1.23;
     }
 
+    @media screen and (min-width: 1200px) {
+        width: 504px;
+    }
 }
 
 .footer__subtitle-sm {
@@ -48,7 +51,9 @@
         line-height: 1.22;
         letter-spacing: 0.06em;
     }
-
+    @media screen and (min-width: 1200px) {
+        width: 497px;
+    }
 }
 
 .footer-social__list {
