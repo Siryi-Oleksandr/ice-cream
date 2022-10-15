@@ -1,22 +1,54 @@
 .header{
-    background-color: #84A178; 
-   
+    
+    height: 61px;
+    background-color: $bg-primary-color;
+
+    @media screen and (min-width: 768px) {
+        height: 86px;    
+    }
 }
 
 .header__container{
+    position: fixed;
+    top:0;
+    left: 50%;
+    transform: translatex(-50%);
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    background-color: rgba(132, 161, 120, 0.9);
+
     padding: 12px 20px;
+
+    @media screen and (min-width: 768px) {
+        padding: 20px 32px;
+
+    }
+
+    
 }
 
 .header__nav{
     display: none;
 }
 
+.header__buttons{
+    @media screen and(min-width: 768px){
+        display: flex;
+        align-items: center;
+    }
+    
+}
+
 .header__btn{
     display: none;
+
+    @media screen and(min-width:768px) {
+        display: flex;
+        margin-left: 32px;
+    }
 }
 
 .btn-burger{
