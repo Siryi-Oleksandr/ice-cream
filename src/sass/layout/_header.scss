@@ -108,7 +108,11 @@
     
 // }
 
-
+.buy-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 .buy-form__header{
@@ -121,10 +125,8 @@
     margin-bottom: 84px;
 }
 
-.buy-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.buy-form__check:checked+.buy-form__item--color-gr{
+    background-color: #AEC6A5;
 }
 
 
@@ -144,28 +146,30 @@
 
     &--color-gr {
         border: 2px solid #AEC6A5;
-        
-        // &:hover{
-        //     background-color:#AEC6A5;
-        // }
     }
-    
+
+    &--color-or{
+       
+        border: 2px solid #EFD478;
+    }
+        
     &--color-br {
         border: 2px solid #D6936D;
     }
 
-    &--color-or{
-        background-color: #EFD478;
-        border: 2px solid #EFD478;
-    }
-        
     &:last-child{
         margin-bottom: 24px;
     }
 }
 
-.buy-form__check:checked .buy-form__item--color-gr {
-    background-color: #AEC6A5;
+.buy-form__check:checked+.buy-form__item{
+
+    &--color-gr{background-color: #AEC6A5;}
+    
+    &--color-or{background-color: #EFD478;}
+
+    &--color-br{background-color: #D6936D}
+
 }
 
 .buy-form__box{
