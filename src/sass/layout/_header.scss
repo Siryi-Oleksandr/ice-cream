@@ -6,6 +6,9 @@
     @media screen and (min-width: 768px) {
         height: 86px;    
     }
+    @media screen and (min-width: 1200px) {
+        height: 81px;
+    }
 }
 
 .header__container{
@@ -13,6 +16,7 @@
     top:0;
     left: 50%;
     transform: translatex(-50%);
+    z-index: 999;
 
     display: flex;
     justify-content: space-between;
@@ -24,26 +28,64 @@
 
     @media screen and (min-width: 768px) {
         padding: 20px 32px;
-
     }
 
-    
+    @media screen and (min-width: 1200px) {
+        padding: 8px 16px;
+    }
 }
 
 .header__nav{
     display: none;
+    @media screen and(min-width:1200px) {
+        display: flex;
+       
+    }
 }
+
+.header__list{
+    display: flex;
+    gap: 27px;
+
+    color: $txt-secondary-color;
+    font-weight: 700;
+    line-height: calc(20 / 16);
+
+}   
+
+// .header__item{
+//     &:focus,
+//     &:hover {
+//         cursor: url(../images/icon-img/cursor-hover.png), pointer;
+//         color: $txt-accent-color;
+//     }
+// }
+
+.header__link{
+    
+    transition: $animation;
+    
+
+    &:focus,
+    &:hover {
+    cursor: url(../images/icon-img/cursor-hover.png), pointer;
+    color: $txt-accent-color;    
+    }
+}
+
 
 .header__buttons{
     @media screen and(min-width: 768px){
         display: flex;
         align-items: center;
+        gap: 27px;
     }
     
 }
 
 .header__btn{
     display: none;
+    transition: $animation;
 
     @media screen and(min-width:768px) {
         display: flex;
@@ -59,4 +101,8 @@
     padding: 0;
     width: 32px;
     height: 32px;
+
+    @media screen and(min-width:1200px) {
+        display: none;
+    }
 }
