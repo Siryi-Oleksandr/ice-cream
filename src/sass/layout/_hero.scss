@@ -1,11 +1,76 @@
 .hero {
+  // position: relative;
+
+  // overflow: hidden;
+  // max-width: 480px;
+  // margin: 0 auto;
+
+  @include section-padding($pt: 110px, $pb: 0);
+
   background-color: $bg-secondary-color;
-  padding-top: 61px;
-  @media screen and (min-width: 768px) {
-      padding-top: 86px;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      padding-top: 81px;
-    }
+
+  background-image: url('../images/content-img/hero/hero-points_480@1x.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/content-img/hero/hero-points_480@2x.png');
+  }
+}
+
+.hero__container {
+  padding: 0 20px;
+}
+
+.hero__title {
+  @include font-source(26px, calc(33 / 26), 400);
+
+  width: 250px;
+  margin-bottom: 32px;
+
+  font-family: 'Seymour One';
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $txt-secondary-color;
+}
+
+.hero__list--organization {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero__list--anchor {
+  display: flex;
+  gap: 8px;
+
+  margin-bottom: 20px;
+}
+
+.hero__thumb--paragraph {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero__image {
+  position: relative;
+  // bottom: 0;
+
+  width: 100%;
+  height: 219px;
+
+  // transform: translate(10px, 60px);
+}
+
+.hero__image--ice-cream {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transform: translate(10px, -60px);
 }

@@ -1,6 +1,5 @@
 $('.team__list').slick({
- nextArrow: '.btn__slick-prev',
-    prevArrow: '.btn__slick-next',
-    dots: true,
-} 
-);
+  nextArrow: '.btn__slick-next',
+  prevArrow: '.btn__slick-prev',
+  dots: true,
+});
