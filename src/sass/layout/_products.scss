@@ -1,0 +1,134 @@
+.products {
+
+
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    background: #F5F5F5;
+    background-image:
+    url("../images/content-img/products-background/products-bg-1_480@1x.png");
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: 
+          url("../images/content-img/products-background/products-bg-2_480@1x.png");
+      }
+
+    @media screen and (min-width: 481px) {
+        background-image: 
+        url("../images/content-img/products-background/products-bg-3_480@1x.png");
+
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+         background-image: 
+        url("../images/content-img/products-background/products-bg-3_480@2x.png");
+        }
+    }
+    @media screen and (min-width: 769px) {
+
+        background-image: 
+        url("../images/content-img/products-background/products-bg_1200@1x.png");
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: 
+              url("../images/content-img/products-background/products-bg_1200@2x.png");
+          }
+        
+    }
+
+
+    &__subtitle {
+        font-weight: 800;
+        font-size: 18px;
+        line-height: calc(22px / 18px);
+        text-align: center;
+        text-transform: uppercase;
+        color: #131313;
+
+        padding-top: 60px;
+        margin-bottom: 12px;
+    }
+
+    &__title {
+        font-family: 'Seymour One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: calc(38px / 30px);
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #131313;
+
+        margin-bottom: 40px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        gap: 56px;
+
+    }
+
+    &__list-item {
+        background: #EFD478;
+        border-radius: 24px;
+        width: 280px;
+        min-height: 420px;
+    }
+
+    &__list-item:first-child {
+        background: #AEC6A5;
+
+    }
+    &__list-item:last-child {
+        background: #D6936D
+
+    }
+
+    &__img-box {
+        position: relative;
+        bottom: 50px;
+    }
+
+    &__img {
+        margin:0 auto;
+    }
+
+    &__description {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    &__description-title {
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: calc(24px / 20px);
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        
+        color: #131313;
+
+        margin-bottom: 40px;
+    }
+
+
+    &__description-text {
+        
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 176%;
+        letter-spacing: 0.04em;
+        color: #131313;
+    }
+}
