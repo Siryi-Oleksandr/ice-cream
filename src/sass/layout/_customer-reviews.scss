@@ -1,0 +1,133 @@
+.team {
+  padding-top: 40px;
+  padding-bottom: 24px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  // Mobile screen
+  background-image: url(../images/content-img/customers-background/customersreviews-bg_768@1x.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/content-img/customers-background/customersreviews-bg_768@2x.png);
+  }
+}
+
+.team__list {
+  margin-bottom: 32px;
+}
+
+.team__item {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.team__img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+
+  border-radius: 50%;
+}
+.team__review {
+  padding: 34px 39px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include font-source(12px, calc(31 / 12));
+  color: $txt-secondary-color;
+  text-align: center;
+
+  background-color: $bg-primary-color;
+  border-radius: 10px;
+
+  @media screen and (min-width: $md) {
+    padding: 28px 80px;
+  }
+
+  @media screen and (min-width: $lg) {
+    padding: 39px 74px;
+    width: 968px;
+  }
+}
+
+.team__name {
+  margin-bottom: 10px;
+  @include font-source(20px, calc(37 / 20), 500);
+  text-align: center;
+}
+
+// Кнопки slider
+
+.slick-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.btn__slick-prev,
+.btn__slick-next {
+  @extend %flex;
+  cursor: url(../images/icon-img/cursor-hover.png), pointer;
+
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: $btn-def-color;
+
+  transition: background-color $animation;
+
+  &:hover,
+  &:focus {
+    background-color: $btn-accent-color;
+  }
+}
+
+.btn-slick__icon {
+  fill: $txt-primary-color;
+
+  transition: fill $animation;
+
+  .btn__slick-prev:focus > &,
+  .btn__slick-next:focus > & {
+    fill: $txt-white-color;
+  }
+}
+
+// Пагінація slider
+
+.slick-dots {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+
+  button {
+    padding: 0;
+    border: none;
+    background-color: #d9d9d9;
+    cursor: url(../images/icon-img/cursor-hover.png), pointer;
+
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    font-size: 0;
+  }
+}
+
+.slick-active {
+  button {
+    background-color: $bg-primary-color;
+  }
+}

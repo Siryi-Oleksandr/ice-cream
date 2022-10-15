@@ -1,5 +1,5 @@
 <header class="header">
-  <div class="container">
+  <div class="container header__container">
     <a href="./index.html" class="logo">
       <picture>
         <!-- desktop -->
@@ -44,7 +44,7 @@
           <a href="#home" class="header__link">Home</a>
         </li>
         <li class="header__item">
-          <a href="#how" class="header__link">How it’s made|</a>
+          <a href="#how" class="header__link">How it’s made?</a>
         </li>
         <li class="header__item">
           <a href="#products" class="header__link">Our products</a>
@@ -54,11 +54,14 @@
         </li>
       </ul>
     </nav>
-    <button class="btn">Buy now</button>
-    <button class="btn-burger">
-      <svg class="btn-burger__icon" width="60" height="65">
-        <use href="./images/icon-img/sprite.svg#burger"></use>
-      </svg>
-    </button>
+
+    <div class="header__buttons">
+      <button class="btn-burger">
+        <svg class="btn-burger__icon" width="32" height="32">
+          <use href="./images/icon-img/sprite.svg#burger"></use>
+        </svg>
+      </button>
+      <button class="btn header__btn">Buy now</button>
+    </div>
   </div>
 </header>
