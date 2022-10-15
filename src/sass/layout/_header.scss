@@ -56,10 +56,8 @@
 }   
 
 .header__link{
+    transition: color $animation;
     
-    transition: $animation;
-    
-
     &:focus,
     &:hover {
     cursor: url(../images/icon-img/cursor-hover.png), pointer;
@@ -72,18 +70,17 @@
     @media screen and(min-width: 768px){
         display: flex;
         align-items: center;
-        gap: 27px;
+        gap: 32px;
     }
     
 }
 
 .header__btn{
     display: none;
-    transition: $animation;
+    transition: background-color $animation, border-color $animation;
 
     @media screen and(min-width:768px) {
         display: flex;
-        margin-left: 32px;
     }
 }
 
