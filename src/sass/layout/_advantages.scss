@@ -163,8 +163,7 @@
     
     //desctop
     @media screen and(min-width:1200px) {
-            @include font-source(58px, calc(71 / 58));
-        
+            @include font-source(58px, calc(71 / 58));        
         }
 
 }
@@ -186,9 +185,7 @@
    //tablet
    @media screen and(min-width:768px) {
     @include font-source(14px, calc(24 / 14), 400);
-    width:152px;
-    
-       
+    width:152px;    
    }
 
    //desctop
@@ -196,7 +193,6 @@
     @include font-source(16px, calc(28 / 16), 400);
     letter-spacing: 0.02em;
     width:368px;
-
-    
+  
 }
 }
