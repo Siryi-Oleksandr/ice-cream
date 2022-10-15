@@ -56,6 +56,8 @@
     color: rgba(252, 252, 252, 1);
    
 }
+
+// горизонтальная линия на весь контейнер
 .footer-aside__tnarrow {
     width: 100%;
     border-top: 1px solid #E1E1E1;
@@ -64,7 +66,6 @@
 }
 
 .footer-aside__title {
-
     width: 280px;
     margin: auto;
     padding-left: 20px;
@@ -75,3 +76,18 @@
     text-align: center;
     color: #7A7A7A;
 }
+
+.footer-social__icon {
+    fill: $bg-primary-color;
+}
+.footer-social__icon:hover {
+    fill: $txt-secondary-color;
+}
+
+// .footer-social__icon {
+//     color: $bg-primary-color;
+// }
+
+// .footer-social__icon:focus {
+//     color: $txt-secondary-color;
+// }
