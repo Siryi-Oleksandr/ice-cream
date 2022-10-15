@@ -4,3 +4,4 @@ $('.team__list').slick({
     dots: true,
 } 
 );
+
