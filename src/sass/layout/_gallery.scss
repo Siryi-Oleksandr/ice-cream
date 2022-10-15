@@ -14,7 +14,7 @@
 }
 
 // .gallery__list {
-// }
+//   }
 // .gallery__item {
 // }
 
@@ -32,4 +32,13 @@
   @media screen and (min-width: $lg) {
     border-radius: 24px;
   }
+}
+
+.btn__slick-right,
+.btn__slick-left {
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  border: none;
+  background-color: transparent;
 }
