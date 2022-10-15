@@ -3,6 +3,7 @@
     padding-bottom: 62px;
     background-color: $bg-primary-color;
 }
+
 .footer__group {
     width: 234px;
     display: flex;
@@ -10,6 +11,11 @@
     gap: 16px;
     margin-bottom: 42px;
     color: $txt-secondary-color;
+
+    @media screen and (min-width: 768px) {
+        gap: 9px;
+        margin-bottom: -98px;
+    }
 }
 
 .footer__subtitle-lg {
@@ -19,7 +25,13 @@
     line-height: 1.22;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    
+
+    @media screen and (min-width: 768px) {
+        width: 352px;
+        font-size: 26px;
+        line-height: 1.23;
+    }
+
 }
 
 .footer__subtitle-sm {
@@ -30,16 +42,38 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
+    @media screen and (min-width: 768px) {
+        width: 340px;
+        font-size: 48px;
+        line-height: 1.22;
+        letter-spacing: 0.06em;
+    }
+
 }
+
 .footer-social__list {
     display: flex;
     margin-bottom: 38px;
     justify-content: right;
     gap: 28px;
 
+    @media screen and (min-width: 768px) {
+        margin-bottom: 32px;
+        gap: 30px;
+    }
+
 }
+
+.footer__column {
+    @media screen and (min-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+    }
+}
+
+// contact
 .footer-contact {
-   
     display: flex;
     font-style: normal;
     font-weight: 700;
@@ -48,22 +82,22 @@
     margin-bottom: 40px;
     line-height: 1.86;
     color: $txt-primary-color;
-    
-    
+
+    // горизонтальная линия на весь контейнер
+    border-bottom: 1px solid #E1E1E1;
+    padding-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 14px;
+        padding-bottom: 32px;
+        text-align: right;
+    }
 }
 
 .footer-contact__link {
     color: rgba(252, 252, 252, 1);
-   
 }
 
-// горизонтальная линия на весь контейнер
-.footer-aside__tnarrow {
-    width: 100%;
-    border-top: 1px solid #E1E1E1;
-    margin-bottom: 16px;
-    
-}
 
 .footer-aside__title {
     width: 280px;
@@ -75,18 +109,25 @@
     line-height: 1.52;
     text-align: center;
     color: #7A7A7A;
+
+    @media screen and (min-width: 768px) {
+        display: inline;
+        line-height: 1.86;
+        letter-spacing: 0.02em;
+    }
+
 }
 
-.footer-social__icon {
+.footer-social__link {
     fill: $bg-primary-color;
 }
-.footer-social__icon:hover {
+
+.footer-social__link:hover {
     fill: $txt-secondary-color;
-    transition: $animation 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+    transition: transform $animation;
 }
 
-.footer-social__icon:hover,
+.footer-social__link:hover,
 .footer-social__item:hover {
     transform: scale(1.2);
 }
-
