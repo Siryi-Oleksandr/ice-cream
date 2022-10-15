@@ -82,12 +82,16 @@
 }
 .footer-social__icon:hover {
     fill: $txt-secondary-color;
+    transition: $animation 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
-// .footer-social__icon {
-//     color: $bg-primary-color;
+// .footer-social__link {
+//     background-size: 32px;
 // }
-
-// .footer-social__icon:focus {
-//     color: $txt-secondary-color;
+// .footer-social__link:hover,
+// .footer-social__link:focus {
+//     background-size: 38px;
+// }
+// .footer-social__item:focus {
+//     transform: scale(2);
 // }
