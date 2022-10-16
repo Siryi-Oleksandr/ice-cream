@@ -413,8 +413,11 @@ height: 16px;
     padding-bottom: 63px;
 
     background-color: #84A178;
+    transition: transform $animation;
 
-    transition: transform $animation
+    @media screen and(min-width:768px) {
+        padding-top: 140px;
+    }
     
 }
     
@@ -438,6 +441,7 @@ height: 16px;
 
     @media screen  and( min-width:768px )  {
         margin-bottom: 0;
+        gap:40px;
     }
 }
 
@@ -453,6 +457,11 @@ height: 16px;
     &:hover,
     &:focus{
     color:$txt-primary-color;
+    }
+
+    @media screen and( min-width:768px )  {
+        font-size: 48px;
+        line-height: calc(59 / 48);
     }
 }
 
