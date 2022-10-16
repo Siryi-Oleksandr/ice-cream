@@ -134,7 +134,12 @@
     @media screen and (min-width:1200px) {
         top:50%;
         transform: translate(-50%, -50%);
+
     }    
+
+
+    }
+
 }
 
 .close-buy{
@@ -144,10 +149,12 @@
     padding: 0;
     
 
+
     display: flex;
     align-items: center;
     justify-content: center;
     background: transparent;
+
     border: none;
     cursor: url(../images/icon-img/cursor-hover.png), pointer;
 
@@ -392,6 +399,7 @@ height: 16px;
 }
 
 
+
 // menu 
 
 .menu{
@@ -474,3 +482,4 @@ height: 16px;
 .is-open{
     transform: translateX(0);
 }
+
