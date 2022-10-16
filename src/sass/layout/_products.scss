@@ -90,9 +90,11 @@
 
     }
 
+    &__bg-box
+
     &__img-box {
-        position: relative;
-        bottom: 50px;
+        // position: relative;
+        // bottom: 50px;
     }
 
     &__img {
@@ -131,4 +133,10 @@
         letter-spacing: 0.04em;
         color: #131313;
     }
+}
+
+
+.btn-arrow:hover,
+.btn-arrow:focus {
+    cursor: url(../images/icon-img/cursor-hover.png), pointer;
 }
