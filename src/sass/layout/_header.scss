@@ -4,7 +4,7 @@
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    z-index: 999;
+    z-index: 1111;
 
     height: 61px;
     background-color: rgba(132, 161, 120, 0.9);
@@ -53,6 +53,8 @@
     font-weight: 700;
     line-height: calc(20 / 16);
 
+
+
 }   
 
 .header__link{
@@ -85,13 +87,17 @@
 }
 
 .btn-burger{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     background-color: transparent;
     border: none;
     padding: 0;
     width: 32px;
     height: 32px;
+
+    cursor: url(../images/icon-img/cursor-hover.png), pointer;
 
     @media screen and(min-width:1200px) {
         display: none;
@@ -103,7 +109,7 @@
 
 .modal-buy-form{
     position: absolute;
-    z-index: 1000;
+    z-index: 222;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -123,10 +129,7 @@
     @media screen and (min-width:1200px) {
         top:50%;
         transform: translate(-50%, -50%);
-
-    }
-
-        
+    }    
 }
 
 .close-buy{
@@ -136,10 +139,10 @@
     padding: 0;
     
 
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    background: #FCFCFC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
     border: none;
     cursor: url(../images/icon-img/cursor-hover.png), pointer;
 
@@ -383,8 +386,77 @@ height: 16px;
     }
 }
 
-// .is-hidden {
-//     visibility: hidden;
-//     opacity: 0;
-//     pointer-events: none;
-// }
+
+// menu 
+
+.menu{
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    transform: translatex(100%);
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding-top: 100px;
+    padding-bottom: 63px;
+
+    background-color: #84A178;
+
+    transition: transform $animation
+    
+}
+    
+.menu__close{
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    padding: 0;
+
+    background: transparent;
+    border: none;
+    cursor: url(../images/icon-img/cursor-hover.png), pointer;
+
+}
+
+.menu__list{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 111px;
+
+    @media screen  and( min-width:768px )  {
+        margin-bottom: 0;
+    }
+}
+
+.menu__item{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(39 / 32);
+
+    color: $txt-secondary-color;
+
+    transition: color $animation;
+
+    &:hover,
+    &:focus{
+    color:$txt-primary-color;
+    }
+}
+
+.menu__btn{
+    @media screen and(min-width:768px) {
+        display: none;
+    }
+}
+
+.is-open{
+    transform: translateX(0);
+}
