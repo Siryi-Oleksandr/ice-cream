@@ -1,16 +1,18 @@
 #contact {
-  padding-top: 61px;
+  border-top: 61px solid transparent;
   margin-top: -61px;
-  background-clip: content-box;
+  background-clip: padding-box;
 
   @media screen and (min-width: 768px) {
-    padding-top: 86px;
+    border-top: 86px solid transparent;
     margin-top: -86px;
+    background-clip: padding-box;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 81px;
+    border-top: 81px solid transparent;
     margin-top: -81px;
+    background-clip: padding-box;
   }
 }
 
