@@ -12,3 +12,4 @@ $('.gallery__list').slick({
   nextArrow: '.btn__slick-left',
   prevArrow: '.btn__slick-right',
 });
+
