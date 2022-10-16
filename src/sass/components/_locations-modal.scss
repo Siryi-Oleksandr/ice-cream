@@ -1,0 +1,94 @@
+.locations__backdrop{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+
+    width: 100%;
+    height: 100%;
+
+
+    background-color: $bg-modal-location-color;
+    
+}
+
+
+.locations__backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.locations__modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 280px;
+    height: 365px;
+
+    transform: translate(-50%, -50%);
+    background-color: $bg-modal-location-color;
+}
+
+.locations__modal--button{
+    position: absolute;
+    top:8px;
+    right:8px;
+
+    border-radius: 50%;
+    border: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+
+.locations__text{
+    @include font-source(16px, calc(24 / 16) 400);
+    font-family: 'Seymour One';
+        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 20px;
+    
+    color:$txt-primary-color;
+}
+.locations__map{
+    justify-content: center;
+}
+
+.locations__box{
+    display: flex;
+    justify-content: center;
+}
+
+.locations__btn{
+    @include font-source(12px, calc(15 / 12) 600);
+    
+    font-family: 'Montserrat';
+        
+    display: flex;
+    padding: 12px, 34px;
+    
+
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    color: $txt-primary-color;
+
+    min-width: 134px;
+    height: 42px;
+
+    background-color:$btn-def-color;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
