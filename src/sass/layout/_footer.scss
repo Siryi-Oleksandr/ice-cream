@@ -1,167 +1,165 @@
 .footer {
-    padding-top: 20px;
-    padding-bottom: 62px;
-    background-color: $bg-primary-color;
-    @media screen and (min-width: 768px) {
-        padding-bottom: 13px;
-    }
-    @media screen and (min-width: 1200px) {
-        padding-bottom: 11px;
-    }
+  padding-top: 20px;
+  padding-bottom: 62px;
+  background-color: $bg-primary-color;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 13px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 11px;
+  }
 }
 
 .footer__group {
-    width: 234px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-bottom: 42px;
-    color: $txt-secondary-color;
+  width: 234px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 42px;
+  color: $txt-secondary-color;
 
-    @media screen and (min-width: 768px) {
-        gap: 9px;
-        margin-bottom: -98px;
-    }
+  @media screen and (min-width: 768px) {
+    gap: 9px;
+    margin-bottom: -98px;
+  }
 }
 
 .footer__subtitle-lg {
-    width: 250px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+  width: 250px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
-    @media screen and (min-width: 768px) {
-        width: 352px;
-        font-size: 26px;
-        line-height: 1.23;
-    }
+  @media screen and (min-width: 768px) {
+    width: 352px;
+    font-size: 26px;
+    line-height: 1.23;
+  }
 
-    @media screen and (min-width: 1200px) {
-        width: 504px;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 504px;
+  }
 }
 
 .footer__subtitle-sm {
-    width: 200px;
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 1.20;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+  width: 200px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 
-    @media screen and (min-width: 768px) {
-        width: 340px;
-        font-size: 48px;
-        line-height: 1.22;
-        letter-spacing: 0.06em;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 497px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 340px;
+    font-size: 48px;
+    line-height: 1.22;
+    letter-spacing: 0.06em;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 497px;
+  }
 }
 .footer-social__item {
-    @media screen and (min-width: 768px) {
-        width: 34px;
-        height: 34px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
 }
 .footer-social__list {
-    display: flex;
-    margin-bottom: 38px;
-    justify-content: right;
-    gap: 28px;
-   
+  display: flex;
+  margin-bottom: 38px;
+  justify-content: right;
+  gap: 28px;
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 32px;
-        gap: 30px;
-    }
-    @media screen and (min-width: 1200px) {
-        padding-top: 12px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 12px;
+  }
 }
 
 .footer__column {
-    @media screen and (min-width: 768px) {
-        flex-wrap: wrap;
-        justify-content: space-around;
-
-    }
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 // contact
 .footer-contact {
-    display: flex;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    justify-content: right;
-    margin-bottom: 40px;
-    line-height: 1.86;
-    color: $txt-primary-color;
-        
-    // горизонтальная линия на весь контейнер
-    border-bottom: 1px solid #E1E1E1;
-    padding-bottom: 40px;
+  display: flex;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  justify-content: right;
+  margin-bottom: 40px;
+  line-height: 1.86;
+  color: $txt-primary-color;
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 14px;
-        padding-bottom: 32px;
-        font-size: 14px;
-        text-align: right;
-    }
-    @media screen and (min-width: 1200px) {
-       
-        padding-bottom: 60px; 
-        font-size: 16px;
-        letter-spacing: 0.02em;
-    }
+  // горизонтальная линия на весь контейнер
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 14px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    text-align: right;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 60px;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+  }
 }
 
 .footer-contact__link {
-    color: rgba(252, 252, 252, 1);
-    cursor: url(../images/icon-img/cursor-hover.png), pointer;
+  color: rgba(252, 252, 252, 1);
+  cursor: url(../images/icon-img/cursor-hover.png), pointer;
 }
 
-
 .footer-aside__title {
-    width: 280px;
-    margin: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.52;
-    text-align: center;
-    color: #7A7A7A;
+  width: 280px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  color: #7a7a7a;
 
-    @media screen and (min-width: 768px) {
-        width: 298px;
-        display: inline;
-        margin-left: 246px;
-        line-height: 1.86;
-        letter-spacing: 0.02em;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 255px;
-        margin-left: 475px; 
-        font-size: 12px;   
-    }
-
+  @media screen and (min-width: 768px) {
+    width: 298px;
+    display: inline;
+    margin-left: 246px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 255px;
+    margin-left: 475px;
+    font-size: 12px;
+  }
 }
 
 .footer-social__link {
-    fill: $bg-primary-color;
+  display: block;
+  fill: $bg-primary-color;
+  cursor: url(../images/icon-img/cursor-hover.png), pointer;
+
+  transition: fill $animation, transform $animation;
 }
 
 .footer-social__link:hover {
-    fill: $txt-secondary-color;
-    transition: transform $animation;
+  fill: $txt-secondary-color;
 }
 
-.footer-social__link:hover,
-.footer-social__item:hover {
-    transform: scale(1.2);
+.footer-social__link:focus {
+  transform: scale(1.2);
+  fill: $txt-secondary-color;
 }
