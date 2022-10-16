@@ -6,17 +6,36 @@
           ice cream made with <span class="hero__title--bold">passion</span>
         </h1>
 
-        <ul class="hero__list--anchor">
-          <li class="hero__item--anchor">
-            <a class="btn-prod btn-prod--disabled" href="#products">Products</a>
-          </li>
-          <li class="hero__item--anchor">
-            <a class="btn-made btn-made--disabled" href="#about"
-              >How it’s made?</a
-            >
-          </li>
-        </ul>
+        <nav class="hero__nav" id="menu">
+          <ul class="hero__list--anchor">
+            <li class="hero__item--anchor">
+              <a class="btn-prod btn-prod--disabled" href="#products"
+                >Products</a
+              >
+            </li>
+            <li class="hero__item--anchor">
+              <a class="btn-made btn-made--disabled" href="#about"
+                >How it’s made?</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
+
+      <!-- <script
+        type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"
+      ></script> -->
+      <script type="text/javascript">
+        $(document).ready(function () {
+          $('#menu').on('click', 'a', function (event) {
+            event.preventDefault();
+            var id = $(this).attr('href'),
+              top = $(id).offset().top;
+            $('.body,html').animate({ scrollTop: top }, 1500);
+          });
+        });
+      </script>
 
       <ul class="hero__list--organization">
         <li class="hero__item">
