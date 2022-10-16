@@ -1,0 +1,17 @@
+.bg-wrapper {
+  width: 100%;
+  //   background-color: $bg-primary-color;
+
+  //   background-image: url(../images/content-img/customers-background/customersreviews-bg_768@1x.png);
+  //   background-position: top 2% bottom 50%;
+
+  background-image: linear-gradient(
+    to bottom,
+    $bg-primary-color 2%,
+    url(../images/content-img/customers-background/customersreviews-bg_768@1x.png)
+      2%,
+    url(../images/content-img/customers-background/customersreviews-bg_768@1x.png)
+      51%,
+    $bg-primary-color 51%
+  );
+}
