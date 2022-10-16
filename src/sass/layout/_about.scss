@@ -1,3 +1,19 @@
+#about {
+  padding-top: 61px;
+  margin-top: -61px;
+  background-clip: content-box;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 86px;
+    margin-top: -86px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 81px;
+    margin-top: -81px;
+  }
+}
+
 .about {
   background: #84a178;
   padding-bottom: 21px;
@@ -14,7 +30,6 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 12px;
-  
 
   @media screen and (min-width: 768px) {
     font-weight: 800;
@@ -148,7 +163,6 @@
 
 .about__btn {
   display: flex;
-  
 
   @media screen and (max-width: 767px) {
     justify-content: center;
