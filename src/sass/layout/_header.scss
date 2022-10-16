@@ -119,6 +119,14 @@
         width: 568px;
         padding: 32px 0;
     }
+
+    @media screen and (min-width:1200px) {
+        top:50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+        
 }
 
 .close-buy{
@@ -374,3 +382,9 @@ height: 16px;
         line-height: calc(17 / 14);
     }
 }
+
+// .is-hidden {
+//     visibility: hidden;
+//     opacity: 0;
+//     pointer-events: none;
+// }
