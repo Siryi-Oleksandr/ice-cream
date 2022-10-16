@@ -1,5 +1,5 @@
 <section class="hero">
-  <div class="container">
+  <div class="container hero__container">
     <h1 class="hero__title">ice cream made with passion</h1>
 
     <ul class="hero__list--organization">
@@ -32,6 +32,23 @@
           <use href="./images/icon-img/sprite.svg#icon-arrow"></use>
         </svg>
       </button>
+    </div>
+
+    <div class="hero__image">
+      <picture class="hero__image--ice-cream">
+        <source
+          srcset="
+            ./images/content-img/hero/hero-ice-cream_480@1x.png 1x,
+            ./images/content-img/hero/hero-ice-cream_480@2x.png 2x
+          "
+          media="(min-width: 320px)"
+          type="image/png"
+        />
+        <img
+          src="./images/content-img/hero/hero-ice-cream_480@1x.png"
+          alt="Smiling Ice-Cream"
+        />
+      </picture>
     </div>
   </div>
 </section>
