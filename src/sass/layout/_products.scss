@@ -40,6 +40,7 @@
     }
 
 
+
     &__subtitle {
         font-weight: 800;
         font-size: 18px;
@@ -48,6 +49,17 @@
         text-transform: uppercase;
         color: #131313;
         margin-bottom: 12px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 22px;
+            line-height: calc(27px / 18px);
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 30px;
+            line-height: calc(37px / 30px);
+            letter-spacing: 0.04em;
+        }
     }
 
     &__title {
@@ -62,6 +74,19 @@
         color: #131313;
 
         margin-bottom: 140px;
+
+        @media screen and (min-width: 768px) {
+            font-size: 34px;
+            line-height: calc(43px / 34px);
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+            line-height: calc(45px / 36px);
+            letter-spacing: 0.06em;
+        }
+
+
     }
 
     &__list {
@@ -71,14 +96,32 @@
         align-items:center;
         gap: 156px;
 
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+        }
+        
+
     }
 
     &__list-item {
         background: #EFD478;
         border-radius: 24px;
         width: 280px;
-        // min-height: 420px;
-        
+
+        @media screen and (min-width: 768px) {
+            width: 224px;
+            
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 370px;
+            
+        }
+
     }
 
     &__list-item:first-child {
@@ -139,6 +182,21 @@
     &__description {
         padding-left: 40px;
         padding-right: 40px;
+
+        @media screen and (min-width: 768px) {
+            padding-left: 26px;
+            padding-right: 26px;
+            
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding-left: 64px;
+            padding-right: 64px;
+            
+        }
+
+
+
     }
 
     &__description-title {
@@ -154,6 +212,12 @@
         color: #131313;
 
         margin-bottom: 40px;
+
+
+        @media screen and (min-width: 768px) {
+            font-size: 22px;
+            line-height: calc(27px / 22px);
+        }
     }
 
 
