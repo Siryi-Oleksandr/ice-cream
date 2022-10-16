@@ -119,6 +119,14 @@
         width: 568px;
         padding: 32px 0;
     }
+
+    @media screen and (min-width:1200px) {
+        top:50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+        
 }
 
 .close-buy{
@@ -131,8 +139,7 @@
     // display: flex;
     // align-items: center;
     // justify-content: center;
-    background-color: #fff;
-
+    background: #FCFCFC;
     border: none;
     cursor: url(../images/icon-img/cursor-hover.png), pointer;
 
@@ -267,6 +274,14 @@ height: 16px;
     transform: translateY(-10px);
 }
 
+.buy-form__subtitle{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
 .buy-form__input{
     width: 224px;
     padding: 8px 12px;
@@ -281,6 +296,8 @@ height: 16px;
 
     font-size: 12px;
     line-height: 140%;
+
+    transition: background-color $animation;
 
     &::placeholder{
         font-family: 'Montserrat';
@@ -365,3 +382,9 @@ height: 16px;
         line-height: calc(17 / 14);
     }
 }
+
+// .is-hidden {
+//     visibility: hidden;
+//     opacity: 0;
+//     pointer-events: none;
+// }
