@@ -1,5 +1,5 @@
 .backdrop {
-    position: fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -7,6 +7,9 @@
   transition-property: opacity, visibility;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 10000;
+  overflow-y: scroll;
   }
 
   .backdrop.is-hidden {
@@ -24,7 +27,7 @@
     padding: 40px;
     position: absolute;
     width: 568px;
-height: 995px;
+    height: 995px;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
