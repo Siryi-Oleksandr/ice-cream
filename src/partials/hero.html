@@ -6,7 +6,7 @@
           ice cream made with <span class="hero__title--bold">passion</span>
         </h1>
 
-        <nav id="menu">
+        <nav class="hero__nav" id="menu">
           <ul class="hero__list--anchor">
             <li class="hero__item--anchor">
               <a class="btn-prod btn-prod--disabled" href="#products"
@@ -22,17 +22,17 @@
         </nav>
       </div>
 
-      <script
+      <!-- <script
         type="text/javascript"
         src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"
-      ></script>
+      ></script> -->
       <script type="text/javascript">
         $(document).ready(function () {
           $('#menu').on('click', 'a', function (event) {
             event.preventDefault();
             var id = $(this).attr('href'),
               top = $(id).offset().top;
-            $('body,html').animate({ scrollTop: top }, 1500);
+            $('.body,html').animate({ scrollTop: top }, 1500);
           });
         });
       </script>
