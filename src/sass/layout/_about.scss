@@ -1,6 +1,7 @@
 .about {
   background: #84a178;
   padding-bottom: 21px;
+  padding-top: 60px;
 }
 
 .about__title {
@@ -13,7 +14,7 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 12px;
-  padding-top: 60px;
+  
 
   @media screen and (min-width: 768px) {
     font-weight: 800;
