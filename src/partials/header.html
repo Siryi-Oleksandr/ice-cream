@@ -42,7 +42,7 @@
     <nav class="header__nav">
       <ul class="header__list">
         <li class="header__item">
-          <a href="#home" class="header__link">Home</a>
+          <a href="./index.html" class="header__link">Home</a>
         </li>
         <li class="header__item">
           <a href="#how" class="header__link">How it’s made?</a>
@@ -73,33 +73,74 @@
   </div>
 </header>
 
-
 <div class="menu js-menu-container" id="mobile-menu">
-  <!-- <button type="button" class="menu__close js-close-menu">
-    <svg class="menu__icon" width="32" height="32">
-      <use href="./images/icon-img/sprite.svg#close-wt"></use>
-    </svg>
-  </button> -->
-  <nav class="menu__nav">
-    <ul class="menu__list">
-      <li class="menu__item">
-        <a href="#home" class="menu__link">Home</a>
-      </li>
-      <li class="menu__item">
-        <a href="#how" class="menu__link">How it’s made?</a>
-      </li>
-      <li class="menu__item">
-        <a href="#products" class="menu__link">Our products</a>
-      </li>
-      <li class="menu__item">
-        <a href="#contact" class="menu__link">Contact</a>
-      </li>
-    </ul>
-  </nav>
+  <div class="container menu__container">
+    <div class="menu__wrapper">
+      <a href="./index.html" class="logo">
+        <picture>
+          <!-- desktop -->
+          <source
+            media="(min-width:1200px)"
+            srcset="
+              ./images/icon-img/logo/logo_1200@1x.png 1x,
+              ./images/icon-img/logo/logo_1200@2x.png 2x
+            "
+            type="image/png"
+          />
 
-  <button type="button" class="btn menu__btn" data-mobile-buy-open>
-    Buy now
-  </button>
+          <!-- tablet -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/icon-img/logo/logo_768@1x.png 1x,
+              ./images/icon-img/logo/logo_768@2x.png 2x
+            "
+            type="image/png"
+          />
+
+          <!-- mobile -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/icon-img/logo/logo_480@1x.png 1x,
+              ./images/icon-img/logo/logo_480@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="logo__img"
+            src="./images/icon-img/logo/logo_480@1x.png"
+            alt="logo"
+          />
+        </picture>
+      </a>
+      <button type="button" class="menu__close js-close-menu">
+        <svg class="menu__icon" width="32" height="32">
+          <use href="./images/icon-img/sprite.svg#close-wt"></use>
+        </svg>
+      </button>
+    </div>
+    <nav class="menu__nav">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#home" class="menu__link">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="#how" class="menu__link">How it’s made?</a>
+        </li>
+        <li class="menu__item">
+          <a href="#products" class="menu__link">Our products</a>
+        </li>
+        <li class="menu__item">
+          <a href="#contact" class="menu__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button type="button" class="btn menu__btn" data-mobile-buy-open>
+      Buy now
+    </button>
+  </div>
 </div>
 
 <div class="backdrop is-hidden" data-modal-buy>
@@ -112,7 +153,6 @@
 
     <form class="buy-form">
       <h2 class="buy-form__header">Buy now</h2>
-
 
       <div class="buy-form__wrapper">
         <input
@@ -203,11 +243,9 @@
         placeholder="Comment"
       ></textarea>
 
-
       <button class="buy-form__btn" type="submit" data-mobile-buy-open>
         Submit
       </button>
-
     </form>
   </div>
 </div>
@@ -221,4 +259,3 @@
   crossorigin="anonymous"
 ></script>
 <script defer src="./js/mobile-menu.js"></script>
-
