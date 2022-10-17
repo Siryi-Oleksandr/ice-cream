@@ -6,7 +6,7 @@
   // background: $bg-secondary-color
   //   url(../images/content-img/customers-background/customersreviews-bg_1920@1x.jpg);
 
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-size: 1920px;
   background-position: 50% 4%;
 
@@ -17,10 +17,10 @@
   }
 
   @media screen and (min-width: $md) {
-    background-position: 50% 27%;
+    background-position: 50% 30%;
   }
 
-  @media screen and (min-width: $md) {
-    background-position: 50% 18%;
+  @media screen and (min-width: $lg) {
+    background-position: 50% 20%;
   }
 }
