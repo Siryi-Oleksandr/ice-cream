@@ -1,17 +1,17 @@
 .bg-wrapper {
+  margin-top: -43px;
   width: 100%;
-  //   background-color: $bg-primary-color;
 
-  //   background-image: url(../images/content-img/customers-background/customersreviews-bg_768@1x.png);
-  //   background-position: top 2% bottom 50%;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  // z-index: -10;
 
-  background-image: linear-gradient(
-    to bottom,
-    $bg-primary-color 2%,
-    url(../images/content-img/customers-background/customersreviews-bg_768@1x.png)
-      2%,
-    url(../images/content-img/customers-background/customersreviews-bg_768@1x.png)
-      51%,
-    $bg-primary-color 51%
-  );
+  // background-image: url(../images/content-img/customers-background/customersreviews-bg_1920@1x.png);
+
+  // @media (min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   background-image: url(../images/content-img/customers-background/customersreviews-bg_1920@2x.png);
+  // }
 }
