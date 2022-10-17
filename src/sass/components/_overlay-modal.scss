@@ -1,5 +1,5 @@
 .overlay {
-  /* Скрываем подложку  */
+  /* Приховування підкладки  */
   opacity: 0;
   visibility: hidden;
 
@@ -11,36 +11,26 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
   transition: 0.3s all;
+
+  //   overflow-y: scroll;
 }
 
-/* Стили для модальных окон */
+/* Стилі модалки */
 
 .modal {
-  /* Скрываем окна  */
+  /* Приховування вікна  */
   opacity: 0;
   visibility: hidden;
-
-  /*  Установаем ширину окна  */
-  //   width: 100%;
-  //   max-width: 500px;
 
   /*  Центрируем и задаем z-index */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 30; /* Должен быть выше чем у подложки*/
-
-  //   /*  Побочные стили   */
-  //   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-  //   text-align: center;
-  //   padding: 30px;
-  //   border-radius: 3px;
-  //   background-color: #fff;
-  //   transition: 0.3s all;
+  z-index: 30; /* Має бути вищим ніж у підкладки*/
 }
 
-/* Стили для активных классов подложки и окна */
+/* Стилі для активних класів підложки та вікна */
 
 .modal.active,
 .overlay.active {
@@ -48,14 +38,14 @@
   visibility: visible;
 }
 
-/* Стили для кнопки закрытия */
+/* Стилі для кнопки закривання */
 
-.modal__cross {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  fill: #444;
-  cursor: pointer;
-}
+// .modal__cross {
+//   width: 15px;
+//   height: 15px;
+//   position: absolute;
+//   top: 20px;
+//   right: 20px;
+//   fill: #444;
+//   cursor: pointer;
+// }
