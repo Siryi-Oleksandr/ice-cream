@@ -252,6 +252,8 @@
   border: none;
   outline: none;
 
+  cursor: url(../images/icon-img/cursor-hover.png), pointer;
+
   &:hover > .btn-arrow__icon {
     transform: scaleX(1.25);
   }
@@ -271,6 +273,8 @@
   border: none;
   outline: none;
   color: $txt-white-color;
+
+  cursor: url(../images/icon-img/cursor-hover.png), pointer;
 
   &:hover > .btn-arrow__icon {
     transform: scaleX(1.25);
