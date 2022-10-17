@@ -1,7 +1,7 @@
 .advantages {
   //phone
   padding-top: 21px;
-  padding-bottom: 60px;
+  padding-bottom: 18px;
   background-color: $bg-secondary-color;
 
   //tablet
@@ -13,7 +13,8 @@
   //desctop
   @media screen and(min-width:1200px) {
     padding-top: 30px;
-    padding-bottom: 43px;
+    // padding-bottom: 43px;
+    padding-bottom: 100px;
   }
 }
 
