@@ -156,7 +156,9 @@ color: #131313;
     border-radius: 100px;
     display: flex;
     justify-content: center;
+    flex-basis: calc(100% /4);
 }
+
 .ingridients__weight{
   @media screen and (max-width: 767px) {
     width: 53px;
