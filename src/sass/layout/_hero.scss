@@ -1,5 +1,11 @@
 .hero {
-  @include section-padding($pt: 110px, $pb: 0);
+  // position: relative;
+
+  // overflow: hidden;
+  // max-width: 480px;
+  // margin: 0 auto;
+
+  @include section-padding($pt: 118px, $pb: 0);
 
   background-color: $bg-secondary-color;
 }
@@ -34,6 +40,22 @@
       background-image: url('../images/content-img/hero/hero-points_768@2x.png');
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0 16px;
+    padding-bottom: 80px;
+
+    background-image: url('../images/content-img/hero/hero-points_1200@1x.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/content-img/hero/hero-points_1200@2x.png');
+    }
+  }
 }
 
 .hero__box--flexed {
@@ -62,12 +84,25 @@
     font-size: 18px;
     line-height: calc(23 / 18);
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 367px;
+    margin-bottom: 28px;
+
+    font-size: 38px;
+    line-height: calc(48 / 38);
+  }
 }
 
 .hero__title--bold {
   @media screen and (min-width: 768px) {
     font-size: 16px;
     line-height: calc(30 / 16);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+    line-height: calc(48 / 38);
   }
 }
 
@@ -76,6 +111,10 @@
   gap: 8px;
 
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 109px;
+  }
 }
 
 .hero__list--organization {
@@ -100,6 +139,11 @@
   color: #131313;
 
   margin-bottom: 4px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+    line-height: calc(56 / 46);
+  }
 }
 
 .hero__structure {
@@ -119,6 +163,11 @@
 
   width: 151px;
   margin-left: 217px;
+
+  @media screen and (min-width: 1200px) {
+    width: 200px;
+    margin-left: 240px;
+  }
 }
 
 .hero__description {
@@ -127,6 +176,11 @@
   line-height: 17px;
 
   color: #fcfcfc;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(20 / 14);
+  }
 }
 
 .hero__image {
@@ -143,6 +197,14 @@
 
     width: 380px;
     height: 454px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    bottom: -155px;
+    right: 10px;
+
+    width: 642px;
+    height: 764px;
   }
 }
 
@@ -173,6 +235,14 @@
 
   width: 152px;
   height: 152px;
+
+  @media screen and (min-width: 1200px) {
+    bottom: 65px;
+    left: 17px;
+
+    width: 225px;
+    height: 225px;
+  }
 }
 
 .hero__image--dish {

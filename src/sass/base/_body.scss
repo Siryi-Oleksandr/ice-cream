@@ -1,23 +1,21 @@
 body {
   color: $txt-primary-color;
   font-family: 'Montserrat', 'Seymour One', 'Inter', 'Roboto', sans-serif;
-    
-  padding-top: 61px;
-  @media screen and (min-width: 768px) {
-      padding-top: 86px;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      padding-top: 81px;
-    }
+
+  // padding-top: 61px;
+  // @media screen and (min-width: 768px) {
+  //   padding-top: 86px;
+  // }
+
+  // @media screen and (min-width: 1200px) {
+  //   padding-top: 81px;
+  // }
 }
 
 .container {
   margin: 0 auto;
   padding: 0 16px;
   width: 100%;
-
-  outline: 1px solid red;
 
   @media screen and (max-width: 319px) {
     width: 320px;

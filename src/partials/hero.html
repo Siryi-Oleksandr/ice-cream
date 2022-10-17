@@ -1,4 +1,4 @@
-<section class="hero">
+<section class="hero" id="home">
   <div class="container hero__container">
     <div class="hero__box--flexed">
       <div class="hero__box--left">
@@ -6,16 +6,20 @@
           ice cream made with <span class="hero__title--bold">passion</span>
         </h1>
 
-        <ul class="hero__list--anchor">
-          <li class="hero__item--anchor">
-            <a class="btn-prod btn-prod--disabled" href="#products">Products</a>
-          </li>
-          <li class="hero__item--anchor">
-            <a class="btn-made btn-made--disabled" href="#about"
-              >How it’s made?</a
-            >
-          </li>
-        </ul>
+        <nav class="hero__nav" id="menu">
+          <ul class="hero__list--anchor">
+            <li class="hero__item--anchor">
+              <a class="btn-prod btn-prod--disabled" href="#products"
+                >Products</a
+              >
+            </li>
+            <li class="hero__item--anchor">
+              <a class="btn-made btn-made--disabled" href="#about"
+                >How it’s made?</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
 
       <ul class="hero__list--organization">
@@ -48,6 +52,14 @@
       <picture class="hero__image--dish">
         <source
           srcset="
+            ./images/content-img/hero/hero-additional_1200@1x.png 225w,
+            ./images/content-img/hero/hero-additional_1200@1x.png 450w
+          "
+          media="(min-width: 1200px)"
+          type="image/png"
+        />
+        <source
+          srcset="
             ./images/content-img/hero/hero-additional_768@1x.png 152w,
             ./images/content-img/hero/hero-additional_768@1x.png 304w
           "
@@ -63,6 +75,14 @@
 
     <div class="hero__image">
       <picture class="hero__image--ice-cream">
+        <source
+          srcset="
+            ./images/content-img/hero/hero-ice-cream_1200@1x.png 1x,
+            ./images/content-img/hero/hero-ice-cream_1200@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/png"
+        />
         <source
           srcset="
             ./images/content-img/hero/hero-ice-cream_768@1x.png 1x,

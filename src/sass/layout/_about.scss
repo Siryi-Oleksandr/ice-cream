@@ -1,3 +1,21 @@
+#about {
+  border-top: 61px solid transparent;
+  margin-top: -61px;
+  background-clip: padding-box;
+
+  @media screen and (min-width: 768px) {
+    border-top: 86px solid transparent;
+    margin-top: -86px;
+    background-clip: padding-box;
+  }
+
+  @media screen and (min-width: 1200px) {
+    border-top: 81px solid transparent;
+    margin-top: -81px;
+    background-clip: padding-box;
+  }
+}
+
 .about {
   background: #84a178;
   padding-bottom: 21px;
@@ -14,7 +32,6 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 12px;
-  
 
   @media screen and (min-width: 768px) {
     font-weight: 800;
@@ -148,7 +165,6 @@
 
 .about__btn {
   display: flex;
-  
 
   @media screen and (max-width: 767px) {
     justify-content: center;
