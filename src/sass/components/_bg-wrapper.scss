@@ -1,0 +1,26 @@
+.bg-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $bg-secondary-color;
+  background-image: url(../images/content-img/customers-background/customersreviews-bg_1920@1x.jpg);
+  // background: $bg-secondary-color
+  //   url(../images/content-img/customers-background/customersreviews-bg_1920@1x.jpg);
+
+  background-repeat: repeat-x;
+  background-size: 1920px;
+  background-position: 50% 4%;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/content-img/customers-background/customersreviews-bg_1920@2x.jpg);
+  }
+
+  @media screen and (min-width: $md) {
+    background-position: 50% 30%;
+  }
+
+  @media screen and (min-width: $lg) {
+    background-position: 50% 20%;
+  }
+}
