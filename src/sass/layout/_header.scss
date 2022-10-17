@@ -8,7 +8,7 @@
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    z-index: 1111;
+    z-index: 2;
 
     height: 61px;
     background-color: rgba(132, 161, 120, 0.9);
@@ -116,10 +116,11 @@
 
 .modal-buy-form{
     position: absolute;
-    z-index: 222;
+    z-index: 3;
     top: 0;
-    left: 50%;
+    left: 50vw;
     transform: translateX(-50%);
+    transform: translateY(-50%);
 
     width: 280px;
     padding: 28px 0;
@@ -133,11 +134,6 @@
         padding: 32px 0;
     }
 
-    @media screen and (min-width:1200px) {
-        top:50%;
-        transform: translate(-50%, -50%);
-
-    }    
 
 }
 
@@ -147,21 +143,26 @@
     right: 8px;
     padding: 0;
     
-
-
     display: flex;
     align-items: center;
     justify-content: center;
-    background: transparent;
 
+    background: transparent;
     border: none;
+
     cursor: url(../images/icon-img/cursor-hover.png), pointer;
+    transition: transform  $animation;
 
     @media screen and (min-width:768px) {
         top: 20px;
         right: 20px;
         width: 20px;
         height: 20px;
+    }
+
+    &:hover,
+    &:focus{
+        transform: scale(1.5);
     }
 }
 
@@ -405,7 +406,7 @@ height: 16px;
     position: fixed;
     top:0;
     left: 0;
-    z-index: 55555;
+    z-index: 3;
     width: 100vw;
     height: 100vh;
     transform: translatex(100%);
