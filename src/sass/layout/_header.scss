@@ -1,16 +1,18 @@
+.logo{
+    cursor: url(../images/icon-img/cursor-hover.png), pointer;
+}
+
 .header{
     position: fixed;
     top: 0;
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    z-index: 999;
+    z-index: 2;
 
     height: 61px;
     background-color: rgba(132, 161, 120, 0.9);
   
-
-
     @media screen and (min-width: 768px) {
         height: 86px;
     }
@@ -37,6 +39,11 @@
     }
 }
 
+.logo__img{
+    position: relative;
+    z-index: 99999;
+}
+
 .header__nav{
     display: none;
     @media screen and(min-width:1200px) {
@@ -52,6 +59,8 @@
     color: $txt-secondary-color;
     font-weight: 700;
     line-height: calc(20 / 16);
+
+
 
 }   
 
@@ -85,13 +94,17 @@
 }
 
 .btn-burger{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     background-color: transparent;
     border: none;
     padding: 0;
     width: 32px;
     height: 32px;
+
+    cursor: url(../images/icon-img/cursor-hover.png), pointer;
 
     @media screen and(min-width:1200px) {
         display: none;
@@ -103,10 +116,11 @@
 
 .modal-buy-form{
     position: absolute;
-    z-index: 1000;
+    z-index: 3;
     top: 0;
-    left: 50%;
+    left: 50vw;
     transform: translateX(-50%);
+    transform: translateY(-50%);
 
     width: 280px;
     padding: 28px 0;
@@ -120,13 +134,7 @@
         padding: 32px 0;
     }
 
-    @media screen and (min-width:1200px) {
-        top:50%;
-        transform: translate(-50%, -50%);
 
-    }
-
-        
 }
 
 .close-buy{
@@ -135,19 +143,26 @@
     right: 8px;
     padding: 0;
     
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    background: #FCFCFC;
+    background: transparent;
     border: none;
+
     cursor: url(../images/icon-img/cursor-hover.png), pointer;
+    transition: transform  $animation;
 
     @media screen and (min-width:768px) {
         top: 20px;
         right: 20px;
         width: 20px;
         height: 20px;
+    }
+
+    &:hover,
+    &:focus{
+        transform: scale(1.5);
     }
 }
 
@@ -383,8 +398,117 @@ height: 16px;
     }
 }
 
-// .is-hidden {
-//     visibility: hidden;
-//     opacity: 0;
-//     pointer-events: none;
-// }
+
+
+// menu 
+
+.menu{
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    transform: translatex(100%);
+    overflow-y: scroll;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    // padding-top: 100px;
+    // padding-bottom: 63px;
+
+    background-color: #84A178;
+    transition: transform $animation;
+    
+}
+
+.menu__container{
+    padding: 12px 20px;
+
+    @media screen and (min-width: 768px) {
+        padding: 20px 32px;
+    }
+
+    
+
+}
+    
+.menu__wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 51px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 76px;
+    }
+
+}
+
+.menu__close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    background: transparent;
+    border: none;
+    cursor: url(../images/icon-img/cursor-hover.png), pointer;
+
+}
+
+.menu__list{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 111px;
+
+    @media screen  and( min-width:768px )  {
+        margin-bottom: 0;
+        gap:40px;
+    }
+}
+
+.menu__item{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(39 / 32);
+
+    color: $txt-secondary-color;
+
+    transition: color $animation;
+    cursor: url(../images/icon-img/cursor-hover.png), pointer;
+
+    &:hover,
+    &:focus{
+    color:$txt-primary-color;
+    }
+
+    @media screen and( min-width:768px )  {
+        font-size: 48px;
+        line-height: calc(59 / 48);
+    }
+}
+
+.menu__link{
+    cursor: url(../images/icon-img/cursor-hover.png), pointer;
+}
+
+.menu__btn{
+    margin-right: auto;
+    margin-left: auto;
+
+    cursor: url(../images/icon-img/cursor-hover.png), pointer;
+
+    @media screen and(min-width:768px) {
+        display: none;
+    }
+
+}
+
+.is-open{
+    transform: translateX(0);
+}
+

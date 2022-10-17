@@ -1,10 +1,10 @@
 <section class="contacts">
   <div class="container">
-    <h2 class="visually-hidden">CONTACTS</h2>
+    <h2 class="visually-hidden" id="contact">CONTACTS</h2>
     <ul class="contacts__list">
       <li class="contacts__item">
         <p class="contacts__category">CAFE</p>
-        <div class="contacts__grid">
+        <div class="contacts__grid contacts__block">
           <h3 class="contacts__undertitle">Chicago</h3>
           <a
             class="contacts__link"
@@ -12,7 +12,7 @@
             target="_blank"
             rel="noopener noreferrer nofollow"
           >
-            10340 Ridgeland Ave,<br />
+            10340 Ridgeland Ave,<br class="br" />
             Chicago Ridge, IL 60415, USA</a
           >
         </div>
@@ -49,7 +49,7 @@
       </li>
       <li class="contacts__item">
         <p class="contacts__category">FOOD TRUCK</p>
-        <div class="contacts__grid">
+        <div class="contacts__grid contacts__block">
           <h3 class="contacts__undertitle">Los Angeles</h3>
           <a
             class="contacts__link"
@@ -57,7 +57,7 @@
             target="_blank"
             rel="noopener noreferrer nofollow"
           >
-            1003 Manhattan Ave, Manhattan<br />
+            1003 Manhattan Ave, Manhattan<br class="br" />
             Beach, CA 90263, USA</a
           >
         </div>
@@ -94,7 +94,7 @@
       </li>
       <li class="contacts__item">
         <p class="contacts__category">CAFE</p>
-        <div class="contacts__grid">
+        <div class="contacts__grid contacts__block">
           <h3 class="contacts__undertitle">New York</h3>
           <a
             class="contacts__link"
@@ -102,7 +102,7 @@
             target="_blank"
             rel="noopener noreferrer nofollow"
           >
-            726 Sterling Pl, Brooklyn,<br />
+            726 Sterling Pl, Brooklyn,<br class="br" />
             NY 11222, USA</a
           >
         </div>
@@ -140,7 +140,7 @@
     </ul>
     <ul class="contacts-buttons">
       <li class="contacts-buttons__item">
-        <button type="button" class="btn btn-contacts">Our Locations</button>
+        <button type="button" class="btn btn-contacts" data-modal-open>Our Locations</button>
       </li>
       <li class="contacts-buttons__item">
         <button type="button" class="btn--disabled btn-contacts">
@@ -150,3 +150,4 @@
     </ul>
   </div>
 </section>
+
