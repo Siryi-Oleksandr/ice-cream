@@ -1,13 +1,15 @@
 .hero {
-  // position: relative;
-
-  // overflow: hidden;
-  // max-width: 480px;
-  // margin: 0 auto;
-
   @include section-padding($pt: 118px, $pb: 0);
 
   background-color: $bg-secondary-color;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 104px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 118px;
+  }
 }
 
 .hero__container {
@@ -62,7 +64,16 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 40px;
+
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 56px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 109px;
+  }
 }
 
 .hero__title {
@@ -112,12 +123,6 @@
 .hero__list--anchor {
   display: flex;
   gap: 8px;
-
-  margin-bottom: 20px;
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 109px;
-  }
 }
 
 .hero__list--organization {
@@ -221,10 +226,6 @@
   @media screen and (min-width: 480px) and (max-width: 767px) {
     transform: translate(-15px, -55px);
   }
-
-  // @media screen and (min-width: 768px) {
-  //   transform: translate(-15px, -55px);
-  // }
 }
 
 .hero__image--additional {
@@ -253,4 +254,17 @@
 
   width: 100%;
   height: 100%;
+}
+
+.animate__rotate {
+  animation: spinning 3s infinite;
+}
+
+@keyframes spinning {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
