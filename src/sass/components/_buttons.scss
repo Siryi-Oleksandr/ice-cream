@@ -113,6 +113,9 @@
 */
 
 .btn-prod {
+  position: relative;
+  z-index: 100;
+
   display: inline-flex;
 
   margin: 0;
@@ -181,6 +184,8 @@
 */
 
 .btn-made {
+  position: relative;
+  z-index: 100;
   display: inline-flex;
 
   margin: 0;
