@@ -95,9 +95,12 @@
 }
 
 .hero__title--bold {
+  font-size: 34px;
+  line-height: calc(32 / 34);
+
   @media screen and (min-width: 768px) {
-    font-size: 16px;
-    line-height: calc(30 / 16);
+    font-size: 24px;
+    line-height: calc(30 / 24);
   }
 
   @media screen and (min-width: 1200px) {
