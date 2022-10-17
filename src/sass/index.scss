@@ -16,15 +16,11 @@
 @import './layout/footer';
 @import './components/buttons';
 @import './components/section-grid';
-
-@import './components/overlay-modal';
-
-// @import './components/modal-ingridients';
-@import './components/locations-modal';
-// @import './layout/read-more-modal';
-// @import './components/franchise-modal';
-
 @import './components/bg-wrapper';
 
-// @import './components/locations-modal';
+// стилі модальних вікон
+@import './components/overlay-modal';
+@import './components/locations-modal';
+@import './components/read-more-modal';
 @import './components/franchise-modal';
+// @import './components/modal-ingridients';
