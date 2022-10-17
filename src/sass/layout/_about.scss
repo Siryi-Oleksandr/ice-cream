@@ -3,11 +3,15 @@
   margin-top: -61px;
   background-clip: padding-box;
 
+// Tablet
+
   @media screen and (min-width: 768px) {
     border-top: 86px solid transparent;
     margin-top: -86px;
     background-clip: padding-box;
   }
+
+// DeskTop
 
   @media screen and (min-width: 1200px) {
     border-top: 81px solid transparent;
@@ -33,12 +37,17 @@
   text-transform: uppercase;
   margin-bottom: 12px;
 
+  // Tablet
+
   @media screen and (min-width: 768px) {
     font-weight: 800;
     font-size: 22px;
 
     letter-spacing: 0.04em;
   }
+
+// DeskTop
+
   @media screen and (min-width: 1200px) {
     font-weight: 800;
     font-size: 30px;
@@ -63,10 +72,16 @@
   @media screen and (max-width: 767px) {
     width: 200px;
   }
+
+// Tablet
+
   @media screen and (min-width: 768px) {
     font-size: 34px;
     letter-spacing: 0.06em;
   }
+
+// DeskTop
+
   @media screen and (min-width: 1200px) {
     font-size: 36px;
     letter-spacing: 0.06em;
@@ -90,10 +105,15 @@
   margin-right: auto;
   margin-left: auto;
 
+  // Tablet
+
   @media screen and (min-width: 768px) {
     width: 335px;
     height: 330px;
   }
+
+// DeskTop
+
   @media screen and (min-width: 1200px) {
     width: 500px;
     height: 500px;
@@ -108,10 +128,16 @@
     position: absolute;
     transform: translateY(22px);
   }
+
+// Tablet
+
   @media screen and (min-width: 768px) {
     max-width: 335px;
     transform: translateY(25px);
   }
+
+// DeskTop
+
   @media screen and (min-width: 1200px) {
     max-width: 490px;
     transform: translateY(39px);
@@ -131,6 +157,8 @@
     text-align: center;
   }
 
+// DeskTop
+
   @media screen and (min-width: 1200px) {
     width: 463px;
     font-size: 14px;
@@ -138,6 +166,8 @@
 }
 
 .about__text:not(:last-child) {
+// Tablet
+
   @media screen and (min-width: 768px) {
     margin-bottom: 8px;
   }
@@ -151,10 +181,14 @@
     margin-right: 50px;
   }
 
+    // Tablet
+
   @media screen and (min-width: 768px) {
     margin-left: 32px;
     margin-right: 34px;
   }
+
+// DeskTop
 
   @media screen and (min-width: 1200px) {
     margin-left: 100px;
@@ -170,13 +204,13 @@
     justify-content: center;
   }
 
+// Tablet
+
   @media screen and (min-width: 768px) {
     margin-left: 32px;
   }
 
-  @media screen and (min-width: 768px) {
-    margin-left: 50px;
-  }
+// DeskTop
 
   @media screen and (min-width: 1200px) {
     margin-left: 100px;
