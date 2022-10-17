@@ -40,7 +40,7 @@
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
         </p>
-        <button class="btn-arrow--white" type="button">
+        <button class="btn-arrow--white" type="button" onclick="clickMe()">
           <svg class="btn-arrow__icon" width="40" height="20">
             <use href="./images/icon-img/sprite.svg#icon-arrow"></use>
           </svg>
@@ -48,20 +48,29 @@
       </div>
     </div>
 
+    <script>
+      function clickMe() {
+        document
+          .querySelector('.hero__image--additional')
+          .classList.toggle('animate__rotate');
+      }
+    </script>
+    <!-- <script src="./js/plate-rotate.js"></script> -->
+
     <div class="hero__image--additional">
       <picture class="hero__image--dish">
         <source
           srcset="
-            ./images/content-img/hero/hero-additional_1200@1x.png 225w,
-            ./images/content-img/hero/hero-additional_1200@1x.png 450w
+            ./images/content-img/hero/hero-additional_1200@1x.png 1x,
+            ./images/content-img/hero/hero-additional_1200@2x.png 2x
           "
           media="(min-width: 1200px)"
           type="image/png"
         />
         <source
           srcset="
-            ./images/content-img/hero/hero-additional_768@1x.png 152w,
-            ./images/content-img/hero/hero-additional_768@1x.png 304w
+            ./images/content-img/hero/hero-additional_768@1x.png 1x,
+            ./images/content-img/hero/hero-additional_768@2x.png 2x
           "
           media="(min-width: 768px)"
           type="image/png"
