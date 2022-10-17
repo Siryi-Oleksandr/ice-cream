@@ -1,50 +1,109 @@
-<section class="hero">
+<section class="hero" id="home">
   <div class="container hero__container">
-    <h1 class="hero__title">ice cream made with passion</h1>
+    <div class="hero__box--flexed">
+      <div class="hero__box--left">
+        <h1 class="hero__title">
+          ice cream made with <span class="hero__title--bold">passion</span>
+        </h1>
 
-    <ul class="hero__list--organization">
-      <li class="hero__item">
-        <p class="hero__quantity">16</p>
-        <p class="hero__structure">cafes</p>
-      </li>
-      <li class="hero__item">
-        <p class="hero__quantity">23</p>
-        <p class="hero__structure">food trucks</p>
-      </li>
-    </ul>
+        <nav class="hero__nav" id="menu">
+          <ul class="hero__list--anchor">
+            <li class="hero__item--anchor">
+              <a class="btn-prod btn-prod--disabled" href="#products"
+                >Products</a
+              >
+            </li>
+            <li class="hero__item--anchor">
+              <a class="btn-made btn-made--disabled" href="#about"
+                >How it’s made?</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-    <ul class="hero__list--anchor">
-      <li class="hero__item--anchor">
-        <a class="btn-prod btn-prod--disabled" href="#products">Products</a>
-      </li>
-      <li class="hero__item--anchor">
-        <a class="btn-made btn-made--disabled" href="#about">How it’s made?</a>
-      </li>
-    </ul>
+      <ul class="hero__list--organization">
+        <li class="hero__item">
+          <p class="hero__quantity">16</p>
+          <p class="hero__structure">cafes</p>
+        </li>
+        <li class="hero__item">
+          <p class="hero__quantity">23</p>
+          <p class="hero__structure">food trucks</p>
+        </li>
+      </ul>
+    </div>
 
     <div class="hero__thumb--paragraph">
-      <p class="hero__description">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et
-      </p>
-      <button class="btn-arrow--white" type="button">
-        <svg class="btn-arrow__icon" width="40" height="20">
-          <use href="./images/icon-img/sprite.svg#icon-arrow"></use>
-        </svg>
-      </button>
+      <div class="hero__thumb--text">
+        <p class="hero__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <button class="btn-arrow--white" type="button">
+          <svg class="btn-arrow__icon" width="40" height="20">
+            <use href="./images/icon-img/sprite.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="hero__image--additional">
+      <picture class="hero__image--dish">
+        <source
+          srcset="
+            ./images/content-img/hero/hero-additional_1200@1x.png 225w,
+            ./images/content-img/hero/hero-additional_1200@1x.png 450w
+          "
+          media="(min-width: 1200px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/content-img/hero/hero-additional_768@1x.png 152w,
+            ./images/content-img/hero/hero-additional_768@1x.png 304w
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <img
+          src="./images/content-img/hero/hero-additional_768@1x.png"
+          alt="Dish with a lot of ice-creams"
+        />
+      </picture>
     </div>
 
     <div class="hero__image">
-      <img
-        class="hero__image--ice-cream"
-        srcset="
-          ./images/content-img/hero/hero-ice-cream_480@1x.png 276w,
-          ./images/content-img/hero/hero-ice-cream_480@2x.png 551w
-        "
-        sizes="480px"
-        src="./images/content-img/hero/hero-ice-cream_480@1x.png"
-        alt="Smiling Ice-Cream"
-      />
+      <picture class="hero__image--ice-cream">
+        <source
+          srcset="
+            ./images/content-img/hero/hero-ice-cream_1200@1x.png 1x,
+            ./images/content-img/hero/hero-ice-cream_1200@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/content-img/hero/hero-ice-cream_768@1x.png 1x,
+            ./images/content-img/hero/hero-ice-cream_768@2x.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/content-img/hero/hero-ice-cream_480@1x.png 1x,
+            ./images/content-img/hero/hero-ice-cream_480@2x.png 2x
+          "
+          media="(min-width: 320px)"
+          type="image/png"
+        />
+        <img
+          src="./images/content-img/hero/hero-ice-cream_480@1x.png"
+          alt="Smiling Ice-Cream"
+        />
+      </picture>
     </div>
   </div>
 </section>

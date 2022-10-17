@@ -38,13 +38,14 @@
         />
       </picture>
     </a>
-    <nav class="header__nav">
+
+    <nav class="header__nav" id="header-nav">
       <ul class="header__list">
         <li class="header__item">
           <a href="#home" class="header__link">Home</a>
         </li>
         <li class="header__item">
-          <a href="#how" class="header__link">How it’s made?</a>
+          <a href="#about" class="header__link">How it’s made?</a>
         </li>
         <li class="header__item">
           <a href="#products" class="header__link">Our products</a>
@@ -56,92 +57,205 @@
     </nav>
 
     <div class="header__buttons">
-      <button class="btn-burger">
+      <button
+        class="btn-burger js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
         <svg class="btn-burger__icon" width="32" height="32">
           <use href="./images/icon-img/sprite.svg#burger"></use>
         </svg>
       </button>
-      <button class="btn header__btn">Buy now</button>
+      <button type="button" class="btn header__btn" data-modal-buy-open>
+        Buy now
+      </button>
     </div>
   </div>
 </header>
 
-<div class="modal-form">
-  <form class="buy-form">
-    <h2 class="buy-form__header">Buy now</h2>
-    <ul class="buy-form__list">
-      <li class="buy-form__item buy-form__item--color-gr">
-        <div class="buy-form__box buy-form__box--color-gr">
-          <img
-            class="buy-form__img"
+<div class="menu js-menu-container" id="mobile-menu">
+  <div class="container menu__container">
+    <div class="menu__wrapper">
+      <a href="./index.html" class="logo">
+        <picture>
+          <!-- desktop -->
+          <source
+            media="(min-width:1200px)"
             srcset="
-              ./images/content-img/buynow-modal/buynowmodal-1@1x.png 1x,
-              ./images/content-img/buynow-modal/buynowmodal-1@2x.png 2x
+              ./images/icon-img/logo/logo_1200@1x.png 1x,
+              ./images/icon-img/logo/logo_1200@2x.png 2x
             "
-            src="./images/content-img/buynow-modal/buynowmodal-1@1x.png"
-            alt="three different ice creams"
+            type="image/png"
           />
-        </div>
-        <h3 class="buy-form_subtitle">ice cream</h3>
-      </li>
 
-      <li class="buy-form__item buy-form__item--color-or">
-        <div class="buy-form__box buy-form__box--color-or">
-          <img
-            class="buy-form__img"
+          <!-- tablet -->
+          <source
+            media="(min-width: 768px)"
             srcset="
-              ./images/content-img/buynow-modal/buynowmodal-2@1x.png 1x,
-              ./images/content-img/buynow-modal/buynowmodal-2@2x.png 2x
+              ./images/icon-img/logo/logo_768@1x.png 1x,
+              ./images/icon-img/logo/logo_768@2x.png 2x
             "
-            src="./images/content-img/buynow-modal/buynowmodal-2@1x.png"
-            alt="a glass of milk coffee with ice"
+            type="image/png"
           />
-        </div>
-        <h3 class="buy-form_subtitle">ice coffee</h3>
-      </li>
-      <li class="buy-form__item buy-form__item--color-br">
-        <div class="buy-form__box buy-form__box--color-br">
-          <img
-            class="buy-form__img"
+
+          <!-- mobile -->
+          <source
+            media="(max-width: 767px)"
             srcset="
-              ./images/content-img/buynow-modal/buynowmodal-3@1x.png 1x,
-              ./images/content-img/buynow-modal/buynowmodal-3@2x.png 2x
+              ./images/icon-img/logo/logo_480@1x.png 1x,
+              ./images/icon-img/logo/logo_480@2x.png 2x
             "
-            src="./images/content-img/buynow-modal/buynowmodal-3@1x.png"
-            alt="a glass of milkshake"
+            type="image/png"
           />
-        </div>
-        <h3 class="buy-form_subtitle">milkshakes</h3>
-      </li>
-    </ul>
+          <img
+            class="logo__img"
+            src="./images/icon-img/logo/logo_480@1x.png"
+            alt="logo"
+          />
+        </picture>
+      </a>
+      <button type="button" class="menu__close js-close-menu">
+        <svg class="menu__icon" width="32" height="32">
+          <use href="./images/icon-img/sprite.svg#close-wt"></use>
+        </svg>
+      </button>
+    </div>
+    <nav class="menu__nav">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="#home" class="menu__link">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="#about" class="menu__link">How it’s made?</a>
+        </li>
+        <li class="menu__item">
+          <a href="#products" class="menu__link">Our products</a>
+        </li>
+        <li class="menu__item">
+          <a href="#contact" class="menu__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-    <input
-      class="buy-form__input"
-      type="text"
-      name="user-name"
-      placeholder="Name"
-      required
-      pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
-      title="Name must be two words separated by space."
-    />
-
-    <input
-      class="buy-form__input"
-      type="tel"
-      name="phone-number"
-      placeholder="Phone"
-      required
-      pattern="[0-9+]+"
-      title="Must be only phone-number."
-    />
-
-    <textarea
-      class="buy-form__textarea"
-      name="coment"
-      rows="2"
-      placeholder="Comment"
-    ></textarea>
-
-    <button class="buy-form__btn" type="submit">Submit</button>
-  </form>
+    <button type="button" class="btn menu__btn" data-mobile-buy-open>
+      Buy now
+    </button>
+  </div>
 </div>
+
+<div class="backdrop is-hidden" data-modal-buy>
+  <div class="modal-buy-form">
+    <button type="button" class="close-buy" data-modal-buy-close>
+      <svg class="close-buy__icon" width="16" height="16">
+        <use href="./images/icon-img/sprite.svg#close-blc"></use>
+      </svg>
+    </button>
+
+    <form class="buy-form">
+      <h2 class="buy-form__header">Buy now</h2>
+
+      <div class="buy-form__wrapper">
+        <input
+          class="buy-form__check visually-hidden"
+          type="checkbox"
+          id="buy-cream"
+        />
+        <label class="buy-form__item buy-form__item--color-gr" for="buy-cream">
+          <div class="buy-form__box buy-form__box--color-gr">
+            <img
+              class="buy-form__img"
+              srcset="
+                ./images/content-img/buynow-modal/buynowmodal-1@1x.png 1x,
+                ./images/content-img/buynow-modal/buynowmodal-1@2x.png 2x
+              "
+              src="./images/content-img/buynow-modal/buynowmodal-1@1x.png"
+              alt="three different ice creams"
+            />
+          </div>
+          <h3 class="buy-form__subtitle">ice cream</h3>
+        </label>
+
+        <input
+          class="buy-form__check visually-hidden"
+          type="checkbox"
+          id="buy-ice"
+        />
+        <label class="buy-form__item buy-form__item--color-or" for="buy-ice">
+          <div class="buy-form__box buy-form__box--color-or">
+            <img
+              class="buy-form__img"
+              srcset="
+                ./images/content-img/buynow-modal/buynowmodal-2@1x.png 1x,
+                ./images/content-img/buynow-modal/buynowmodal-2@2x.png 2x
+              "
+              src="./images/content-img/buynow-modal/buynowmodal-2@1x.png"
+              alt="a glass of milk coffee with ice"
+            />
+          </div>
+          <h3 class="buy-form__subtitle">ice coffee</h3>
+        </label>
+
+        <input
+          class="buy-form__check visually-hidden"
+          type="checkbox"
+          id="buy-milk"
+        />
+        <label class="buy-form__item buy-form__item--color-br" for="buy-milk">
+          <div class="buy-form__box buy-form__box--color-br">
+            <img
+              class="buy-form__img"
+              srcset="
+                ./images/content-img/buynow-modal/buynowmodal-3@1x.png 1x,
+                ./images/content-img/buynow-modal/buynowmodal-3@2x.png 2x
+              "
+              src="./images/content-img/buynow-modal/buynowmodal-3@1x.png"
+              alt="a glass of milkshake"
+            />
+          </div>
+          <h3 class="buy-form__subtitle">milkshakes</h3>
+        </label>
+      </div>
+
+      <input
+        class="buy-form__input"
+        type="text"
+        name="user-name"
+        placeholder="Name"
+        required
+        pattern="^[a-zA-Z]+"
+        title="Name must be only one word."
+      />
+
+      <input
+        class="buy-form__input"
+        type="tel"
+        name="phone-number"
+        placeholder="Phone"
+        required
+        pattern="^(?=.*\d)(?!.*\s).*$"
+        title="Must be only phone-number."
+      />
+
+      <textarea
+        class="buy-form__textarea"
+        name="coment"
+        rows="2"
+        placeholder="Comment"
+      ></textarea>
+
+      <button class="buy-form__btn" type="submit" data-mobile-buy-open>
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
+<script src="./js/modal-buy.js"></script>
+
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
+<script defer src="./js/mobile-menu.js"></script>
