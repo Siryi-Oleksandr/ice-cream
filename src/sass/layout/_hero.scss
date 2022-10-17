@@ -1,16 +1,16 @@
 .hero {
-  @include section-padding($pt: 118px, $pb: 0);
+  @include section-padding($pt: 56px, $pb: 0);
 
   background-color: $bg-secondary-color;
 
   overflow: hidden;
 
   @media screen and (min-width: 768px) {
-    padding-top: 104px;
+    padding-top: 36px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 118px;
+    padding-top: 40px;
   }
 }
 
@@ -67,7 +67,7 @@
   justify-content: space-between;
   align-items: baseline;
 
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 56px;
