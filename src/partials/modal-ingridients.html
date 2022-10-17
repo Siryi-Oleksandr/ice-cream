@@ -1,22 +1,14 @@
-<div class="backdrop is-hidden" data-modal>
+<!-- <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="modal-btn" type="button" data-modal-close>
         <svg class="bnt-exit" width="18" height="18">
           <use href="./images/icon-img/sprite.svg#icon-clarity_close-line"></use>
         </svg>
       </button>
-      <strong class="ingridients__tittle" >Chololate icecream</strong>
-  
-  
-  
-  
-  <div class="ingridients__wrapper"> 
-  <img src="./images/content-img/ingredients-modal/ingredientsmodal@1x.jpg" alt="ice-cream" class="picture">
-  <div>
-  
-  </div>
-  </div>    
-  <div class="ingridients__groups"> 
+      <strong class="ingridients__tittle" >Chololate icecream</strong>  
+          <div class="ingridients__wrapper"> 
+          </div>
+    <div class="ingridients__groups"> 
     <ul class="ingridients__group">
         <li class="ingridients__weight">
           <div class="ingridients__circle">
@@ -100,19 +92,170 @@
           </li>
           <li class="personal-data">
             <label class="register-form-field">
-              <textarea
-                class="register-form-message"
-                name="register-form-field"
+             name="register-form-field"
                 rows="5"
                 id="feedback"
                 placeholder="Comment"
               ></textarea>
             </label>
-          </li>
+          </li> <textarea
+                class="register-form-message"
+                
   
           </li>
         </ul>
   
         <button class="register-form-btn" type="submit">Submit</button>
       </form>
+    </div> -->
+
+<div class="backdrop is-hidden/" data-modal-buy>
+  <div class="modal ingr-modal">
+    <button type="button" class="modal-close" data-modal-buy-close>
+      <svg class="modal-close__icon" width="16" height="16">
+        <use href="./images/icon-img/sprite.svg#close-blc"></use>
+      </svg>
+    </button>
+
+    <h2 class="form__header ingr-form__header">
+      Chololate <br />
+      icecream
+    </h2>
+
+    <div class="ingr-form__wrap">
+      <div class="ingr-form__box">
+        <img
+          class="ingr-form__img"
+          srcset="
+            ./images/content-img/ingredients-modal/ingredientsmodal@1x.jpg 1x,
+            ./images/content-img/ingredients-modal/ingredientsmodal@2x.jpg 2x
+          "
+          src="./images/content-img/ingredients-modal/ingredientsmodal@1x.jpg"
+          alt="three different ice creams"
+        />
+      </div>
     </div>
+
+    <ul class="ingr-form__group">
+      <li class="ingr-form__item">
+        <div class="ingr-form__amount">320</div>
+        kcal
+      </li>
+      <li class="ingr-form__item">
+        <div class="ingr-form__amount">4g</div>
+        Prote...
+      </li>
+      <li class="ingr-form__item">
+        <div class="ingr-form__amount">8,2g</div>
+        Fats
+      </li>
+      <li class="ingr-form__item">
+        <div class="ingr-form__amount">40,4g</div>
+        Carbs
+      </li>
+    </ul>
+
+    <h3 class="ingr-form__subtitle">Ingredients</h3>
+
+    <ul class="ingridients__names">
+      <li class="ingridients__list">
+        <span> Milk</span>
+        <span>100ml</span>
+      </li>
+      <li class="ingridients__list">
+        <span> Belgian chocolate</span>
+        <span>20g</span>
+      </li>
+      <li class="ingridients__list">
+        <span>Cream</span>
+        <span>150 ml</span>
+      </li>
+      <li class="ingridients__list">
+        <span>Cocoa powder</span>
+        <span>30g</span>
+      </li>
+      <li class="ingridients__list">
+        <span>Sugar</span>
+        <span>40g</span>
+      </li>
+      <li class="ingridients__list">
+        <span>Vanilla sugar</span>
+        <span>10g</span>
+      </li>
+    </ul>
+
+    <form class="form">
+      <!-- <div class="buy-form__wrapper">
+        <div class="buy-form__box buy-form__box--color-gr">
+          <img
+            class="buy-form__img"
+            srcset="
+              ./images/content-img/buynow-modal/buynowmodal-1@1x.png 1x,
+              ./images/content-img/buynow-modal/buynowmodal-1@2x.png 2x
+            "
+            src="./images/content-img/buynow-modal/buynowmodal-1@1x.png"
+            alt="three different ice creams"
+          />
+        </div>
+        <h3 class="buy-form__subtitle">ice cream</h3>
+
+        <div class="buy-form__box buy-form__box--color-or">
+          <img
+            class="buy-form__img"
+            srcset="
+              ./images/content-img/buynow-modal/buynowmodal-2@1x.png 1x,
+              ./images/content-img/buynow-modal/buynowmodal-2@2x.png 2x
+            "
+            src="./images/content-img/buynow-modal/buynowmodal-2@1x.png"
+            alt="a glass of milk coffee with ice"
+          />
+        </div>
+        <h3 class="buy-form__subtitle">ice coffee</h3>
+
+        <div class="buy-form__box buy-form__box--color-br">
+          <img
+            class="buy-form__img"
+            srcset="
+              ./images/content-img/buynow-modal/buynowmodal-3@1x.png 1x,
+              ./images/content-img/buynow-modal/buynowmodal-3@2x.png 2x
+            "
+            src="./images/content-img/buynow-modal/buynowmodal-3@1x.png"
+            alt="a glass of milkshake"
+          />
+        </div>
+        <h3 class="buy-form__subtitle">milkshakes</h3>
+      </div> -->
+
+      <input
+        class="form__input"
+        type="text"
+        name="user-name"
+        placeholder="Name"
+        required
+        pattern="^[a-zA-Z]+"
+        title="Name must be only one word."
+      />
+
+      <input
+        class="form__input"
+        type="tel"
+        name="phone-number"
+        placeholder="Phone"
+        required
+        pattern="^(?=.*\d)(?!.*\s).*$"
+        title="Must be only phone-number."
+      />
+
+      <textarea
+        class="form__textarea"
+        name="coment"
+        rows="2"
+        placeholder="Comment"
+      ></textarea>
+
+      <button class="form__btn" type="submit" data-mobile-buy-open>
+        Submit
+      </button>
+    </form>
+  </div>
+</div>

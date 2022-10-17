@@ -144,15 +144,15 @@
 </div>
 
 <div class="backdrop is-hidden" data-modal-buy>
-  <div class="modal-buy-form">
-    <button type="button" class="close-buy" data-modal-buy-close>
-      <svg class="close-buy__icon" width="16" height="16">
+  <div class="modal">
+    <button type="button" class="modal-close" data-modal-buy-close>
+      <svg class="modal-close__icon" width="16" height="16">
         <use href="./images/icon-img/sprite.svg#close-blc"></use>
       </svg>
     </button>
 
-    <form class="buy-form">
-      <h2 class="buy-form__header">Buy now</h2>
+    <form class="form">
+      <h2 class="form__header buy-form__header">Buy now</h2>
 
       <div class="buy-form__wrapper">
         <input
@@ -217,7 +217,7 @@
       </div>
 
       <input
-        class="buy-form__input"
+        class="form__input"
         type="text"
         name="user-name"
         placeholder="Name"
@@ -227,7 +227,7 @@
       />
 
       <input
-        class="buy-form__input"
+        class="form__input"
         type="tel"
         name="phone-number"
         placeholder="Phone"
@@ -237,13 +237,13 @@
       />
 
       <textarea
-        class="buy-form__textarea"
+        class="form__textarea"
         name="coment"
         rows="2"
         placeholder="Comment"
       ></textarea>
 
-      <button class="buy-form__btn" type="submit" data-mobile-buy-open>
+      <button class="form__btn" type="submit" data-mobile-buy-open>
         Submit
       </button>
     </form>
