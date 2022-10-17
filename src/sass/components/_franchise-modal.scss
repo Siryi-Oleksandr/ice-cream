@@ -1,21 +1,8 @@
+.modal-wrapper {
+  position: relative;
+}
+
 .fr-modal {
-  /* Скрываем окна  */
-  opacity: 0;
-  visibility: hidden;
-
-  /*  Установаем ширину окна  */
-  //    width: 100%;
-  //    max-width: 500px;
-
-  /*  Центрируем и задаем z-index */
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 30;
-
-  //   left: 50%;
-  //   transform: translateX(-50%);
   width: 280px;
   padding: 30px;
   background: $txt-secondary-color;
@@ -27,6 +14,7 @@
     padding: 32px 0;
   }
 }
+
 .fr-modal__close {
   position: absolute;
   top: 8px;
