@@ -24,6 +24,7 @@
   background: #84a178;
   padding-bottom: 21px;
   padding-top: 60px;
+ 
 }
 
 .about__title {
@@ -67,10 +68,16 @@
   text-transform: uppercase;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 32px;
+  
+  
 
   @media screen and (max-width: 767px) {
     width: 200px;
+    padding-bottom: 32px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 72px;
   }
 
 // Tablet
@@ -101,15 +108,21 @@
     #d9d9d9;
   box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
   border-radius: 50%;
+  
+  
+
+@media screen and (max-width: 767px) {
   margin-bottom: 62px;
-  margin-right: auto;
+margin-right: auto;
   margin-left: auto;
+}
 
   // Tablet
 
   @media screen and (min-width: 768px) {
     width: 335px;
     height: 330px;
+    
   }
 
 // DeskTop
@@ -143,6 +156,24 @@
     transform: translateY(39px);
   }
 }
+
+.about__text-box {
+  @media screen and (max-width: 767px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-left: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 100px;
+    padding-right: 121px;
+    padding-top: 172px;
+  }
+}
+
 .about__text {
   font-style: normal;
   font-weight: 400;
@@ -169,31 +200,25 @@
 // Tablet
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 8px;
+    padding-bottom: 8px;
   }
 }
 
 .about__description {
-  margin-bottom: 20px;
-
-  @media screen and (max-width: 767px) {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
-    // Tablet
+  padding-bottom: 20px;
 
   @media screen and (min-width: 768px) {
-    margin-left: 32px;
-    margin-right: 34px;
+    padding-bottom: 48px;
+    width: 334px;
   }
+
+  
 
 // DeskTop
 
   @media screen and (min-width: 1200px) {
-    margin-left: 100px;
-    margin-right: 121px;
-    margin-top: 172px;
+    width: 463px;
+    
   }
 }
 
@@ -204,17 +229,7 @@
     justify-content: center;
   }
 
-// Tablet
-
-  @media screen and (min-width: 768px) {
-    margin-left: 32px;
-  }
-
-// DeskTop
-
-  @media screen and (min-width: 1200px) {
-    margin-left: 100px;
-  }
+  
 }
 
 .about__tablet {
