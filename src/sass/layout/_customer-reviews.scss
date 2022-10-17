@@ -2,18 +2,18 @@
   padding-top: 40px;
   padding-bottom: 24px;
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
 
-  // Mobile screen
-  background-image: url(../images/content-img/customers-background/customersreviews-bg_768@1x.png);
+  // // Mobile screen
+  // background-image: url(../images/content-img/customers-background/customersreviews-bg_768@1x.png);
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/content-img/customers-background/customersreviews-bg_768@2x.png);
-  }
+  // @media (min-device-pixel-ratio: 2),
+  //   (min-resolution: 192dpi),
+  //   (min-resolution: 2dppx) {
+  //   background-image: url(../images/content-img/customers-background/customersreviews-bg_768@2x.png);
+  // }
 }
 
 .team__list {
