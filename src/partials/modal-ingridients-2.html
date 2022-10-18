@@ -1,0 +1,100 @@
+<div class="modal-wrapper">
+    <div class="modal ingr-modal" data-modal="4">
+      <button type="button" class="modal-close js-modal-close">
+        <svg class="modal-close__icon" width="16" height="16">
+          <use href="./images/icon-img/sprite.svg#close-blc"></use>
+        </svg>
+      </button>
+      <h2 class="form__header ingr-form__header">
+        Ice <br />
+       Coffee
+      </h2>
+      <div class="ingr-form__wrap-2">
+        <div class="ingr-form__box-2">
+          <img
+            class="ingr-form__img-2"
+            srcset="
+            ./images/content-img/ingredients-modal/ingredientsmodal@1x.jpg 1x,
+            ./images/content-img/ingredients-modal/ingredientsmodal@2x.jpg 2x
+            "
+            src="./images/content-img/ingredients-modal/ingredientsmodal@1x.jpg"
+            alt="three different ice creams"
+          />
+        </div>
+      </div>
+      <ul class="ingr-form__group-2">
+        <li class="ingr-form__item-2">
+          <div class="ingr-form__amount-2">320</div>
+          kcal
+        </li>
+        <li class="ingr-form__item-2">
+          <div class="ingr-form__amount-2">4g</div>
+          Prote...
+        </li>
+        <li class="ingr-form__item-2">
+          <div class="ingr-form__amount-2">8,2g</div>
+          Fats
+        </li>
+        <li class="ingr-form__item-2">
+          <div class="ingr-form__amount-2">40,4g</div>
+          Carbs
+        </li>
+      </ul>
+      <h3 class="ingr-form__subtitle-2">Ingredients</h3>
+      <ul class="ingridients__names-2">
+        <li class="ingridients__list-2">
+          <span> Milk</span>
+          <span>100ml</span>
+        </li>
+        <li class="ingridients__list-2">
+          <span> Belgian chocolate</span>  
+          <span>20g</span>
+        </li>
+        <li class="ingridients__list-2">
+          <span>Ice</span>
+          <span>20g</span>
+        </li>
+        <li class="ingridients__list-2">
+          <span>Cocoa powder</span>
+          <span>30g</span>
+        </li>
+        <li class="ingridients__list-2">
+          <span>Espresso</span>
+          <span>40ml</span>
+        </li>
+        <li class="ingridients__list-2">
+          <span>Vanilla sugar</span>
+          <span>10g</span>
+        </li>
+      </ul>
+      <form class="form-2">
+        <input
+          class="form__input-2"
+          type="text"
+          name="user-name"
+          placeholder="Name"
+          required
+          pattern="^[a-zA-Z]+"
+          title="Name must be only one word."
+        />
+        <input
+          class="form__input-2"
+          type="tel"
+          name="phone-number"
+          placeholder="Phone"
+          required
+          pattern="^(?=.*\d)(?!.*\s).*$"
+          title="Must be only phone-number."
+        />
+        <textarea
+          class="form__textarea-2"
+          name="coment"
+          rows="2"
+          placeholder="Comment"
+        ></textarea>
+        <button class="form__btn-2" type="submit" data-mobile-buy-open>
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
