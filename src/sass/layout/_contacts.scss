@@ -53,10 +53,13 @@
 
   &__item {
     // display: grid;
-    // width: 100%;
+    // width: inherit;
 
     // justify-content: start;
     // justify-items: start;
+
+    display: block;
+    width: 280px;
 
     padding-top: 40px;
     padding-bottom: 16px;
@@ -69,10 +72,12 @@
 
     @media screen and (min-width: 768px) {
       padding: 40px 24px;
+      width: 224px;
     }
 
     @media screen and (min-width: 1200px) {
       padding: 40px;
+      width: 368px;
     }
   }
 
@@ -80,6 +85,8 @@
     background-color: $btn-def-color;
     display: inline-flex;
     padding: 0 25px;
+    
+
 
     letter-spacing: 0.04em;
     border-radius: 4px;
@@ -117,7 +124,11 @@
   }
 
   &__undertitle {
-    display: inline-flex;
+    // display: inline-flex;
+
+    display: block;
+    margin-bottom: 8px;
+
 
     font-weight: 500;
     font-size: 12px;
@@ -126,41 +137,37 @@
 
     @media screen and (min-width: 768px) {
       font-size: 14px;
+      margin-bottom: 12px;
     }
     @media screen and (min-width: 1200px) {
       font-size: 16px;
+      margin-bottom: 8px;
     }
   }
 
   &__block {
-    margin-top: 24px;
-    margin-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
 
     @media screen and (min-width: 768px) {
-      margin-top: 32px;
-      margin-bottom: 26px;
+      padding-top: 32px;
+      padding-bottom: 26px;
     }
   }
 
-  &__grid {
-    display: grid;
-    gap: 8px;
-    width: 100%;
-    // padding-top: 24px;
-    // padding-bottom: 24px;
-    align-self: stretch;
-    grid-template-rows: repeat(280px);
+  &__ grid {
+    
+ 
     grid-template-columns: 216px;
 
     @media screen and (min-width: 768px) {
-      gap: 12px;
-      // padding-top: 32px;
-      // padding-bottom: 32px;
+    
       grid-template-columns: 176px;
     }
 
     @media screen and (min-width: 1200px) {
-      gap: 8px;
+    
 
       grid-template-columns: 288px;
     }
@@ -168,8 +175,24 @@
 }
 
 .contacts-workday {
+  
   padding-top: 24px;
   padding-bottom: 24px;
+  width: 100%;
+  
+  &__item {
+    display: block;
+    
+  }
+
+  &__item:not(:last-child){
+      margin-bottom: 8px;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 12px;
+  }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 8px;
+    }}
 
   @media screen and (min-width: 768px) {
     padding-top: 32px;
@@ -248,7 +271,7 @@
   display: grid;
   gap: 16px;
   justify-content: center;
-
+ 
   @media screen and (min-width: 768px) {
     display: flex;
   }
