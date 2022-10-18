@@ -66,7 +66,11 @@
           <use href="./images/icon-img/sprite.svg#burger"></use>
         </svg>
       </button>
-      <button type="button" class="btn header__btn" data-modal-buy-open>
+      <button
+        type="button"
+        class="btn header__btn js-open-modal"
+        data-modal="10"
+      >
         Buy now
       </button>
     </div>
@@ -137,120 +141,11 @@
       </ul>
     </nav>
 
-    <button type="button" class="btn menu__btn" data-mobile-buy-open>
+    <button type="button" class="btn menu__btn js-open-modal" data-modal="10">
       Buy now
     </button>
   </div>
 </div>
-
-<div class="backdrop is-hidden" data-modal-buy>
-  <div class="modal-buy-form">
-    <button type="button" class="close-buy" data-modal-buy-close>
-      <svg class="close-buy__icon" width="16" height="16">
-        <use href="./images/icon-img/sprite.svg#close-blc"></use>
-      </svg>
-    </button>
-
-    <form class="buy-form">
-      <h2 class="buy-form__header">Buy now</h2>
-
-      <div class="buy-form__wrapper">
-        <input
-          class="buy-form__check visually-hidden"
-          type="checkbox"
-          id="buy-cream"
-        />
-        <label class="buy-form__item buy-form__item--color-gr" for="buy-cream">
-          <div class="buy-form__box buy-form__box--color-gr">
-            <img
-              class="buy-form__img"
-              srcset="
-                ./images/content-img/buynow-modal/buynowmodal-1@1x.png 1x,
-                ./images/content-img/buynow-modal/buynowmodal-1@2x.png 2x
-              "
-              src="./images/content-img/buynow-modal/buynowmodal-1@1x.png"
-              alt="three different ice creams"
-            />
-          </div>
-          <h3 class="buy-form__subtitle">ice cream</h3>
-        </label>
-
-        <input
-          class="buy-form__check visually-hidden"
-          type="checkbox"
-          id="buy-ice"
-        />
-        <label class="buy-form__item buy-form__item--color-or" for="buy-ice">
-          <div class="buy-form__box buy-form__box--color-or">
-            <img
-              class="buy-form__img"
-              srcset="
-                ./images/content-img/buynow-modal/buynowmodal-2@1x.png 1x,
-                ./images/content-img/buynow-modal/buynowmodal-2@2x.png 2x
-              "
-              src="./images/content-img/buynow-modal/buynowmodal-2@1x.png"
-              alt="a glass of milk coffee with ice"
-            />
-          </div>
-          <h3 class="buy-form__subtitle">ice coffee</h3>
-        </label>
-
-        <input
-          class="buy-form__check visually-hidden"
-          type="checkbox"
-          id="buy-milk"
-        />
-        <label class="buy-form__item buy-form__item--color-br" for="buy-milk">
-          <div class="buy-form__box buy-form__box--color-br">
-            <img
-              class="buy-form__img"
-              srcset="
-                ./images/content-img/buynow-modal/buynowmodal-3@1x.png 1x,
-                ./images/content-img/buynow-modal/buynowmodal-3@2x.png 2x
-              "
-              src="./images/content-img/buynow-modal/buynowmodal-3@1x.png"
-              alt="a glass of milkshake"
-            />
-          </div>
-          <h3 class="buy-form__subtitle">milkshakes</h3>
-        </label>
-      </div>
-
-      <input
-        class="buy-form__input"
-        type="text"
-        name="user-name"
-        placeholder="Name"
-        required
-        pattern="^[a-zA-Z]+"
-        title="Name must be only one word."
-      />
-
-      <input
-        class="buy-form__input"
-        type="tel"
-        name="phone-number"
-        placeholder="Phone"
-        required
-        pattern="^(?=.*\d)(?!.*\s).*$"
-        title="Must be only phone-number."
-      />
-
-      <textarea
-        class="buy-form__textarea"
-        name="coment"
-        rows="2"
-        placeholder="Comment"
-      ></textarea>
-
-      <button class="buy-form__btn" type="submit" data-mobile-buy-open>
-        Submit
-      </button>
-    </form>
-  </div>
-</div>
-
-<script src="./js/modal-buy.js"></script>
 
 <script
   defer
