@@ -16,7 +16,11 @@
   top: 8px;
   right: 8px;
   padding: 0;
-  background: $txt-white-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
   border: none;
   cursor: url(../images/icon-img/cursor-hover.png), pointer;
   @media screen and (min-width: 768px) {
@@ -24,6 +28,11 @@
     right: 20px;
     width: 20px;
     height: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.5);
   }
 }
 .fr-modal__close--icon {
