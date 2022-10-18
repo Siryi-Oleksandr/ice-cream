@@ -15,9 +15,15 @@
 .ingr-form__header {
   font-size: 20px;
   line-height: calc(28 / 20);
-  margin-bottom: 30px;
-}
-.ingr-form__wrap {
+  margin-bottom: 29px;
+  min-width: 142px;
+
+  @media screen and(min-width:768px) {
+    margin-bottom: 31px;
+    min-width: none;
+  }
+
+}.ingr-form__wrap {
   position: relative;
   width: 132px;
   height: 132px;
@@ -51,36 +57,66 @@
   gap: 9px;
   justify-content: center;
   margin-bottom: 39px;
+
+  @media screen and(min-width:768px) {
+    margin-bottom: 48px;
+    gap: 20px;
+  }
+
 }
 .ingr-form__item {
   position: relative;
-  width: 53px;
+  min-width: 53px;
   min-height: 70px;
-  padding-top: 52px;
-  padding-bottom: 4px;
+  padding-top: 50px;
+  padding-bottom: 6px;
+
   text-align: center;
-  border: 2px solid #9cbe8f;
+  border: 2px solid $bg-component-color;
   border-radius: 40px;
 
   font-size: 10px;
   line-height: calc(12 / 10);
+
+  @media screen and(min-width:768px) {
+    min-width: 65px;
+    min-height: 90px;
+    padding-top: 59px;
+    padding-bottom: 12px;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+  }
 }
+
+
 .ingr-form__amount {
+
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 50%;
   transform: translateX(-50%);
   width: 43px;
   height: 43px;
   border-radius: 50%;
-  padding-top: 4px;
-  background-color: #9cbe8f;
-  border: 2px solid #9cbe8f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $bg-component-color;
+  border: 2px solid $bg-component-color;
   box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
   font-weight: 500;
   font-size: 10px;
   line-height: calc(28 / 10);
+
+  @media screen and(min-width:768px) {
+    width: 53px;
+    height: 53px;
+    font-size: 12px;
+    line-height: calc(28 / 12);
+
+  }
 }
+
 .ingr-form__subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -89,6 +125,7 @@
   text-align: center;
   margin-bottom: 24px;
 }
+
 .ingridients__names {
   margin-bottom: 48px;
   display: flex;
