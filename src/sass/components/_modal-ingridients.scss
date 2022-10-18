@@ -109,18 +109,21 @@ border-radius: 140px;
 }
 
 .ingridients__groups{
-  @media screen and (max-width: 767px) {
-    min-width: 60px;
-    max-height: 100px;
+  // @media screen and (max-width: 767px) {
+  //   min-width: 60px;
+  //   max-height: 100px;
     
-  }
+  // }
 margin-top: 60px;
 }
 
 
 .ingridients__group{
  
-   
+  @media screen and (max-width: 767px) {
+//  gap:10px;
+
+  }
 
 
 
@@ -144,15 +147,15 @@ color: #131313;
 
 .ingridients__circle{
   @media screen and (max-width: 767px) {
-    width: 20px;
+    width: 35px;
     height: 40px;
     
   }
   box-sizing: border-box;
   
 
-    
-    height: 53px;
+
+    height: 40px;
     background: #9CBE8F;
     border: 2px solid #9CBE8F;
     box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
@@ -163,27 +166,27 @@ color: #131313;
 
 .ingridients__weight{
   @media screen and (max-width: 767px) {
-    width: 53px;
-    height: 72px;
+    width: 50px;
+    height: 70px;
     
   }
-    width: 65px;
-    height: 90px;
+    width: 50px;
+    height: 70px;
     border: 2px solid #9CBE8F;
     border-radius: 20px;
-    
+   
 
 }
 
 
 
 .ingridients__name{
-   
   @media screen and (max-width: 767px) {
-    max-width: 20px;
-   
+    font-size: 8px;
+    padding-top: 0%;
     
   }
+ 
     
     font-family: 'Montserrat';
     font-style: normal;
@@ -195,16 +198,16 @@ color: #131313;
     text-align: center;
     justify-content: center;
     color: #131313;
-   padding-top: 5px;
+   padding-top: 8px;
     
 }
 .weight__text{
    
-  // @media screen and (max-width: 767px) {
-  //   max-width: 20px;
-  //   max-height: 80px;
+  @media screen and (max-width: 767px) {
+    max-width: 20px;
+    max-height: 80px;
     
-  // }
+  }
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
@@ -387,6 +390,14 @@ border-radius: 10px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.register-form-btn:hover{
+  background-color: #0A8817;}
+
+  .register-form-btn:focus{
+    background-color: #0A8817;}
+
+
 .block-data{
 margin-top: 48px;
 }
