@@ -408,7 +408,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 250;
+  z-index: 150;
   width: 100vw;
   height: 100vh;
   transform: translatex(100%);
@@ -458,9 +458,10 @@
 
   transition: transform $animation;
 
-    &:hover,
-    &:focus {
-  transform: scale(1.25);    }
+  &:hover,
+  &:focus {
+    transform: scale(1.25);
+  }
 }
 
 .menu__list {
@@ -520,5 +521,3 @@
   transform: translateX(0);
   visibility: visible;
 }
-
-
