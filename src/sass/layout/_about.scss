@@ -1,6 +1,6 @@
 #about {
-  border-top: 61px solid transparent;
-  margin-top: -61px;
+  border-top: 60px solid transparent;
+  margin-top: -60px;
   background-clip: padding-box;
 
   // Tablet
@@ -24,7 +24,6 @@
   background: #84a178;
   padding-bottom: 21px;
   padding-top: 60px;
-
 }
 
 .about__title {
@@ -69,8 +68,6 @@
   margin-left: auto;
   margin-right: auto;
 
-
-
   @media screen and (max-width: 767px) {
     width: 200px;
     padding-bottom: 32px;
@@ -100,14 +97,14 @@
   width: 279px;
   height: 279px;
 
-  background: linear-gradient(0deg,
+  background: linear-gradient(
+      0deg,
       rgba(248, 210, 78, 0.7),
-      rgba(248, 210, 78, 0.7)),
+      rgba(248, 210, 78, 0.7)
+    ),
     #d9d9d9;
   box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
   border-radius: 50%;
-
-
 
   @media screen and (max-width: 767px) {
     margin-bottom: 62px;
@@ -120,7 +117,6 @@
   @media screen and (min-width: 768px) {
     width: 335px;
     height: 330px;
-
   }
 
   // DeskTop
@@ -210,13 +206,10 @@
     width: 334px;
   }
 
-
-
   // DeskTop
 
   @media screen and (min-width: 1200px) {
     width: 463px;
-
   }
 }
 
@@ -226,8 +219,6 @@
   @media screen and (max-width: 767px) {
     justify-content: center;
   }
-
-
 }
 
 .about__tablet {

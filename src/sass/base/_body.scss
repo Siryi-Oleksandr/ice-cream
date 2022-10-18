@@ -2,15 +2,15 @@ body {
   color: $txt-primary-color;
   font-family: 'Montserrat', 'Seymour One', 'Inter', 'Roboto', sans-serif;
 
-  padding-top: 61px;
+  // padding-top: 61px;
 
-  @media screen and (min-width: 768px) {
-    padding-top: 86px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   padding-top: 86px;
+  // }
 
-  @media screen and (min-width: 1200px) {
-    padding-top: 81px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   padding-top: 81px;
+  // }
 }
 
 .container {
