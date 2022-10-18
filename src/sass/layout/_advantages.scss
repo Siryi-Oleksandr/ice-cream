@@ -20,6 +20,14 @@
 }
 
 .advantages__list {
+
+  @media screen and(max-width:767px){
+    padding-left: 25px;
+    padding-right: 25px;
+
+  }
+
+
   //tablet
   @media screen and(min-width:768px) {
     display: flex;
