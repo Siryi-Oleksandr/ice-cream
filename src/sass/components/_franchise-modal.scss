@@ -23,6 +23,8 @@
   background: transparent;
   border: none;
   cursor: url(../images/icon-img/cursor-hover.png), pointer;
+  transition: transform $animation;
+
   @media screen and (min-width: 768px) {
     top: 20px;
     right: 20px;
