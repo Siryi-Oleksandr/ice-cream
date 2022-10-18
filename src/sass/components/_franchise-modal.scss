@@ -1,167 +1,151 @@
 .fr-modal {
-    position: absolute;
-    z-index: 1000;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-
-    width: 280px;
-    padding: 28px 0;
-
-    background: $txt-secondary-color;
-    border: 2px solid  $txt-accent-color;
-    border-radius: 10px;
-
-    @media screen and(min-width:768px) {
-        width: 568px;
-        padding: 32px 0;
-    }  
+  width: 280px;
+  padding: 30px;
+  background: $txt-secondary-color;
+  border: 2px solid $txt-accent-color;
+  border-radius: 10px;
+  // Tablet
+  @media screen and(min-width:768px) {
+    width: 568px;
+    padding: 32px 0;
+  }
 }
+
 .fr-modal__close {
-    position: fixed;
-    top: 8px;
-    right: 8px;
-    padding: 0;
-    background: $txt-white-color; 
-    border: none;
-    cursor: url(../images/icon-img/cursor-hover.png), pointer;
-    @media screen and (min-width:768px) {
-        top: 20px;
-        right: 20px;
-        width: 20px;
-        height: 20px;
-    } 
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+  background: $txt-white-color;
+  border: none;
+  cursor: url(../images/icon-img/cursor-hover.png), pointer;
+  @media screen and (min-width: 768px) {
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+  }
 }
 .fr-modal__close--icon {
-    width: 16px;
-height: 16px;
-
-@media screen and (min-width:768px) {
-        
-        width: 20px;
-        height: 20px;
-    }
+  width: 16px;
+  height: 16px;
+  // Tablet
+  @media screen and (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
 }
 .fr-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.fr-form__header{
-    font-family: 'Seymour One';
-    font-weight: 400;
+.fr-form__header {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  text-align: center;
+  width: 221px;
+  margin-bottom: 20px;
+  // Tablet
+  @media screen and (min-width: 768px) {
+    width: 322px;
     font-size: 20px;
     line-height: calc(28 / 20);
-    text-align: center;
-
-    margin: 28px 30px 20px 29px ;
-
-    @media screen and(min-width:768px) {
-        margin: 32px 123px 24px 123px;
-
-    }
+  }
 }
 .fr-form__text {
-    font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0em;
+  text-align: left;
+  color: $txt-primary-color;
+  width: 222px;
+  margin-bottom: 24px;
+  // Tablet
+  @media screen and (min-width: 768px) {
     font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: $txt-primary-color;
+    line-height: 140%;
+    width: 448px;
+    margin-bottom: 32px;
+  }
 }
 .fr-form__input {
-    width: 224px;
-    padding: 8px 12px;
-    margin-bottom: 12px;
-
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
-    border-radius: 10px;
-
+  width: 224px;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  color: $txt-primary-color;
+  font-size: 12px;
+  line-height: 140%;
+  &::placeholder {
     font-family: 'Montserrat';
     color: $txt-primary-color;
-
     font-size: 12px;
     line-height: 140%;
-
-    &::placeholder{
-        font-family: 'Montserrat';
-        color: $txt-primary-color;
-        
-        font-size: 12px;
-        line-height: 140%;
-    }
-
-    &:not(:placeholder-shown):required:invalid {
-        background-color: rgba(255, 0, 0, 0.3);
-    }
-
-    @media screen  and( min-width:768px ) {
-        margin-bottom: 16px;
-        width: 368px;
-    }
+  }
+  &:not(:placeholder-shown):required:invalid {
+    background-color: rgba(255, 0, 0, 0.3);
+  }
+  // Tablet
+  @media screen and( min-width:768px ) {
+    margin-bottom: 16px;
+    width: 368px;
+  }
 }
-.fr-form__textarea{
-    width: 224px;
-    height: 64px;
-    padding: 8px 12px;
-    margin-bottom: 24px;
-
-    background: rgba(248, 210, 78, 0.1);
-    border: 1px solid #84A178;
-    border-radius: 10px;
-
+.fr-form__textarea {
+  width: 224px;
+  height: 64px;
+  padding: 8px 12px;
+  margin-bottom: 24px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  color: $txt-primary-color;
+  font-size: 12px;
+  line-height: 140%;
+  resize: none;
+  &::placeholder {
     font-family: 'Montserrat';
     color: $txt-primary-color;
-
     font-size: 12px;
     line-height: 140%;
-
-    resize: none;
-
-    &::placeholder {
-    font-family: 'Montserrat';
-    color: $txt-primary-color;
-    
-    font-size: 12px;
-    line-height: 140%;
-    }
-
-    @media screen and(min-width:768px) {
-        margin-bottom: 32px;
-        width: 368px;
-        height: 84px;
-    }
+  }
+  // Tablet
+  @media screen and(min-width:768px) {
+    margin-bottom: 32px;
+    width: 368px;
+    height: 84px;
+  }
 }
-.fr-form__button
-{
-    @extend %btn;
-
-    font-size: 12px;
-    line-height: calc(15 / 12);
-    
-    border: 2px solid $btn-def-color;
-    background-color: $btn-def-color;
-    cursor: url(../images/icon-img/cursor-hover.png), pointer;
-
-    margin-right: auto;
-    margin-left: auto;
-
-    transition: background-color $animation, border-color $animation, color $animation;
-    &:hover {
-        border-color: $btn-accent-color;
-        background-color: $btn-accent-color;
-    }
-
-    &:focus {
-        outline-color: $btn-accent-color;
-        background-color: $btn-accent-color;
-        color: $txt-secondary-color;
-    }
-
-    @media screen and(min-width:768px) {
-        font-size: 14px;
-        line-height: calc(17 / 14);
-    } 
+.fr-form__button {
+  @extend %btn;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  border: 2px solid $btn-def-color;
+  background-color: $btn-def-color;
+  cursor: url(../images/icon-img/cursor-hover.png), pointer;
+  margin-right: auto;
+  margin-left: auto;
+  transition: background-color $animation, border-color $animation,
+    color $animation;
+  &:hover {
+    border-color: $btn-accent-color;
+    background-color: $btn-accent-color;
+  }
+  &:focus {
+    outline-color: $btn-accent-color;
+    background-color: $btn-accent-color;
+    color: $txt-secondary-color;
+  }
+  @media screen and(min-width:768px) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
 }

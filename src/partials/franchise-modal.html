@@ -1,18 +1,22 @@
-<div class="backdrop" data-modal>
-<div class="fr-modal">
-    <button class="fr-modal__close" type="button" data-modal-close>
-        <svg class="fr-modal__close--icon" width="11" height="11">
-          <use href="./images/icon-img/sprite.svg#vector"></use>
-        </svg>
-      </button>
-      <form class="fr-form" name="franchise">
-        <h2 class="fr-form__header">
-            Thank you for your interest in owning an Ice Cream shop
-        </h2 class="fr-form__text">
-        <p>Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.
-        </p>
-      
-        <input
+<div class="modal-wrapper">
+  <div class="modal fr-modal" data-modal="1">
+    <button class="fr-modal__close js-modal-close" type="button">
+      <svg class="fr-modal__close--icon" width="11" height="11">
+        <use href="./images/icon-img/sprite.svg#vector"></use>
+      </svg>
+    </button>
+    <form class="fr-form" name="franchise">
+      <h2 class="fr-form__header">
+        Thank you for your interest in owning an Ice Cream shop
+      </h2>
+      <p class="fr-form__text">
+        Due to the overwhelming volume of franchise requests we are not
+        accepting new franchisee applications at this time. Once the application
+        process resumes, we will contact you for further information. Please
+        fill out the contact information below and we will reach out for
+        additional information. We appreciate your patience.
+      </p>
+      <input
         class="fr-form__input"
         type="text"
         name="user-name"
@@ -21,7 +25,6 @@
         pattern="^[a-zA-Z]+"
         title="Name must be only one word."
       />
-  
       <input
         class="fr-form__input"
         type="tel"
@@ -31,18 +34,22 @@
         pattern="^(?=.*\d)(?!.*\s).*$"
         title="Must be only phone-number."
       />
-  
+      <input
+        class="fr-form__input"
+        type="email"
+        name="email"
+        placeholder="Email"
+        required
+        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+        title="Must be only email."
+      />
       <textarea
         class="fr-form__textarea"
         name="coment"
         rows="2"
         placeholder="Comment"
       ></textarea>
-          <button class="fr-form__button" type="submit">
-            Submit
-          </button>
-        </form>
+      <button class="fr-form__button" type="submit">Submit</button>
+    </form>
+  </div>
 </div>
-</div>
-
-<script src="./js/modal.js"></script>
