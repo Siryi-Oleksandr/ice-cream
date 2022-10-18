@@ -24,7 +24,7 @@
 
   text-align: center;
 
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: center;
   background-size: cover;
   background: #f5f5f5;
@@ -33,16 +33,16 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('../images/content-img/products-background/products-bg-2_480@1x.png');
+    background-image: url('../images/content-img/products-background/products-bg-1_480@2x.png');
   }
 
   @media screen and (min-width: 481px) {
-    background-image: url('../images/content-img/products-background/products-bg-3_480@1x.png');
+    background-image: url('../images/content-img/products-background/products-bg_768@1x.png');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/content-img/products-background/products-bg-3_480@2x.png');
+      background-image: url('../images/content-img/products-background/products-bg_768@2x.png');
     }
   }
   @media screen and (min-width: 769px) {
