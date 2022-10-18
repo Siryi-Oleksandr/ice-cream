@@ -204,9 +204,23 @@
 
 .contacts-address__list--tel {
   padding-top: 24px;
+  transition: color $animation;
+
+  &:hover,
+  &:focus {
+    color: $txt-accent-color;
+    cursor: url(../images/icon-img/cursor-hover.png), pointer;
+  }
 }
 .contacts-address__list--mail {
   padding-bottom: 24px;
+  transition: color $animation;
+
+  &:hover,
+  &:focus {
+    color: $txt-accent-color;
+    cursor: url(../images/icon-img/cursor-hover.png), pointer;
+  }
 }
 
 .contacts-workday {
