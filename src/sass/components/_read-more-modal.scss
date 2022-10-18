@@ -1,12 +1,7 @@
 .read-modal {
-    position: absolute;
-    z-index: 1000;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-
+   
     width: 280px;
-    padding: 28px 0;
+    padding: 28px;
 
     background: $txt-secondary-color;
     border: 2px solid $txt-accent-color;
