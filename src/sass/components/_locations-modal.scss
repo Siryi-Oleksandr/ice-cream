@@ -26,19 +26,47 @@
 }
 
 .locations__modal--button {
-  position: absolute;
+  position: fixed;
   top: 8px;
   right: 8px;
-
-  border-radius: 50%;
-  border: transparent;
-
+  padding: 0;
+  
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background-color: transparent;
+  
+  background: transparent;
+  border: none;
+  
   cursor: url(../images/icon-img/cursor-hover.png), pointer;
+  transition: transform $animation;
+  
+  @media screen and (min-width: 768px) {
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    }
+  
+    &:hover,
+    &:focus {
+      transform: scale(1.5);
+    }
+
+
+  //position: absolute;
+  //top: 8px;
+  //right: 8px;
+
+  //border-radius: 50%;
+  //border: transparent;
+
+  //display: flex;
+  //align-items: center;
+  //justify-content: center;
+
+  //background-color: transparent;
+  //cursor: url(../images/icon-img/cursor-hover.png), pointer;
 }
 
 .locations__modal--closed {
@@ -102,7 +130,6 @@
 
 .locations__btn {
   @include font-source(12px, calc(15 / 12));
-  font-family: 'Montserrat';
   font-weight: 600;
 
   padding: 12px 32px;
@@ -113,10 +140,18 @@
   height: 42px;
 
   background-color: $btn-def-color;
+  transition: background-color $animation;
+
   border: transparent;
   border-radius: 10px;
 
   cursor: url(../images/icon-img/cursor-hover.png), pointer;
+
+    &:hover,
+    &:focus {
+      background-color: $btn-accent-color;
+      color: $txt-secondary-color;
+      }
 
   //tablet and desctop
   @media screen and(min-width:768px) {
