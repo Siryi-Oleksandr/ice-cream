@@ -12,6 +12,7 @@
     width: 568px;
     padding: 32px 0;
   }
+  
 }
 
 .close-buy {
@@ -97,7 +98,7 @@
   padding-top: 96px;
   padding-bottom: 20px;
 
-  transition: background-color $animation;
+  transition: background-color $animation, transform $animation;
   cursor: url(../images/icon-img/cursor-hover.png), pointer;
 
   &--color-gr {
@@ -120,16 +121,20 @@
 }
 
 .buy-form__check:checked + .buy-form__item {
+  transform: scale(1.1);
   &--color-gr {
     background-color: #aec6a5;
+    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
   }
 
   &--color-or {
     background-color: #efd478;
+    box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
   }
 
   &--color-br {
     background-color: #d6936d;
+    box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -286,3 +291,4 @@
     line-height: calc(17 / 14);
   }
 }
+
