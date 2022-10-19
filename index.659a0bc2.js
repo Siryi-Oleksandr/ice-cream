@@ -1,0 +1,2 @@
+$(document).ready((function(){$("#menu").on("click","a",(function(t){t.preventDefault();var e=$(this).attr("href"),n=$(e).offset().top;$(".body,html").animate({scrollTop:n},1500)}))})),$(document).ready((function(){$("#header-nav").on("click","a",(function(t){t.preventDefault();var e=$(this).attr("href"),n=$(e).offset().top;$(".body,html").animate({scrollTop:n},1500)}))}));
+//# sourceMappingURL=index.659a0bc2.js.map
