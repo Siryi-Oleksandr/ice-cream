@@ -21,6 +21,8 @@
   /* Приховування вікна  */
   opacity: 0;
   visibility: hidden;
+  max-height: 100vh;
+  overflow: auto;
 
   /*  Центрируем и задаем z-index */
   position: fixed;
