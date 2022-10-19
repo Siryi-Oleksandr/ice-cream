@@ -12,8 +12,8 @@
   padding-right: 32px;
 
   border-radius: 24px;
-  background: $txt-secondary-color;
-  box-shadow: 0px 8px 30px $shadow-color;
+  //   background: $txt-secondary-color;
+  //   box-shadow: 0px 8px 30px $shadow-color;
 
   @media screen and (min-width: 768px) {
     padding: 40px 24px;
@@ -37,7 +37,7 @@
 
   .scene:hover & {
     transform: rotateY(-180deg);
-    box-shadow: 7px 13px 25px -6px rgb(0 0 0 / 72%);
+    // box-shadow: 7px 13px 25px -6px rgb(0 0 0 / 72%);
   }
 }
 
