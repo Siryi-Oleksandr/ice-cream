@@ -18,6 +18,11 @@ body {
   overflow-y: hidden;
 }
 
+.no-scroll-menu {
+  overflow: hidden;
+  overflow-y: hidden;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 16px;
