@@ -12,7 +12,6 @@
     width: 568px;
     padding: 32px 0;
   }
-  
 }
 
 .close-buy {
@@ -115,7 +114,7 @@
 
   @media screen and( max-width:767px ) {
     &:last-child {
-      margin-bottom: 24px;
+      margin-bottom: 30px;
     }
   }
 }
@@ -190,6 +189,10 @@
   line-height: calc(20 / 16);
   letter-spacing: 0.04em;
   text-transform: uppercase;
+}
+
+.form__field--buy {
+  margin-bottom: 25px;
 }
 
 // .buy-form__input {
@@ -291,4 +294,3 @@
 //     line-height: calc(17 / 14);
 //   }
 // }
-

@@ -1,0 +1,160 @@
+// form common
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+.form__header {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  text-align: center;
+}
+.form__input {
+  width: 220px;
+  padding: 8px 12px;
+
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+
+  font-family: 'Montserrat';
+  color: $txt-primary-color;
+
+  font-size: 12px;
+  line-height: 140%;
+
+  transition: background-color $animation;
+  outline: none;
+
+  &::placeholder {
+    font-family: 'Montserrat';
+    color: rgba(127, 127, 127, 0.5);
+
+    font-size: 12px;
+    line-height: 140%;
+  }
+  &:not(:placeholder-shown):required:invalid {
+    background-color: rgba(255, 0, 0, 0.3);
+  }
+
+  @media screen and(min-width:768px) {
+    width: 368px;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: #f8d24e;
+  }
+
+  &::placeholder {
+    opacity: 0;
+  }
+
+  &:focus::placeholder {
+    opacity: 1;
+  }
+}
+
+.form__label-text {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: transform 500ms linear;
+
+  .form__input:focus + & {
+    transform: translateY(-36px) rotate(360deg);
+  }
+  .form__input:not(:placeholder-shown) + & {
+    transform: translateY(-36px) rotate(360deg);
+  }
+
+  .form__textarea:focus + & {
+    transform: translateY(-42px) rotate(360deg);
+  }
+  .form__textarea:not(:placeholder-shown) + & {
+    transform: translateY(-42px) rotate(360deg);
+  }
+
+  @include font-source(14px, calc(20 / 14));
+}
+
+.form__label-text--message {
+  top: 10%;
+  left: 12px;
+  transform: translateY(-20%);
+  transition: transform 500ms linear;
+
+  .form__textarea:focus + & {
+    transform: translateY(-30px) rotate(360deg);
+  }
+  .form__textarea:not(:placeholder-shown) + & {
+    transform: translateY(-30px) rotate(360deg);
+  }
+}
+
+.form__field {
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form__textarea {
+  width: 220px;
+  height: 64px;
+  padding: 8px 12px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  color: $txt-primary-color;
+  font-size: 12px;
+  line-height: 140%;
+  resize: none;
+  outline: none;
+
+  &::placeholder {
+    font-family: 'Montserrat';
+    color: $txt-primary-color;
+    font-size: 12px;
+    line-height: 140%;
+  }
+  @media screen and(min-width:768px) {
+    width: 368px;
+    height: 84px;
+  }
+}
+
+.form__textarea:hover,
+:focus {
+  border-color: #f8d24e;
+}
+
+.form__btn {
+  @extend %btn;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  border: 2px solid $btn-def-color;
+  background-color: $btn-def-color;
+  cursor: url(../images/icon-img/cursor-hover.png), pointer;
+  margin-right: auto;
+  margin-left: auto;
+  transition: background-color $animation, border-color $animation,
+    color $animation;
+  &:hover {
+    border-color: $btn-accent-color;
+    background-color: $btn-accent-color;
+  }
+  &:focus {
+    outline-color: $btn-accent-color;
+    background-color: $btn-accent-color;
+    color: $txt-secondary-color;
+  }
+  @media screen and(min-width:768px) {
+    font-size: 14px;
+    line-height: calc(17 / 14);
+  }
+}
