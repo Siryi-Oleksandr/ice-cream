@@ -52,41 +52,33 @@
   }
 
   &__item {
-    // display: grid;
-    // width: inherit;
+    // display: block;
+    // width: 280px;
 
-    // justify-content: start;
-    // justify-items: start;
+    // padding-top: 40px;
+    // padding-bottom: 16px;
+    // padding-left: 32px;
+    // padding-right: 32px;
 
-    display: block;
-    width: 280px;
+    // border-radius: 24px;
+    // background: $txt-secondary-color;
+    // box-shadow: 0px 8px 30px $shadow-color;
 
-    padding-top: 40px;
-    padding-bottom: 16px;
-    padding-left: 32px;
-    padding-right: 32px;
+    // @media screen and (min-width: 768px) {
+    //   padding: 40px 24px;
+    //   width: 224px;
+    // }
 
-    border-radius: 24px;
-    background: $txt-secondary-color;
-    box-shadow: 0px 8px 30px $shadow-color;
-
-    @media screen and (min-width: 768px) {
-      padding: 40px 24px;
-      width: 224px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      padding: 40px;
-      width: 368px;
-    }
+    // @media screen and (min-width: 1200px) {
+    //   padding: 40px;
+    //   width: 368px;
+    // }
   }
 
   &__category {
     background-color: $btn-def-color;
     display: inline-block;
     padding: 0 25px;
-    
-
 
     letter-spacing: 0.04em;
     border-radius: 4px;
@@ -129,7 +121,6 @@
     display: block;
     margin-bottom: 8px;
 
-
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
@@ -157,17 +148,15 @@
   }
 
   // &__ grid {
-    
- 
+
   //   grid-template-columns: 216px;
 
   //   @media screen and (min-width: 768px) {
-    
+
   //     grid-template-columns: 176px;
   //   }
 
   //   @media screen and (min-width: 1200px) {
-    
 
   //     grid-template-columns: 288px;
   //   }
@@ -175,24 +164,23 @@
 }
 
 .contacts-workday {
-  
   padding-top: 24px;
   padding-bottom: 24px;
   width: 100%;
-  
+
   &__item {
     display: block;
-    
   }
 
-  &__item:not(:last-child){
-      margin-bottom: 8px;
-      @media screen and (min-width: 768px) {
-        margin-bottom: 12px;
-  }
+  &__item:not(:last-child) {
+    margin-bottom: 8px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 12px;
+    }
     @media screen and (min-width: 1200px) {
       margin-bottom: 8px;
-    }}
+    }
+  }
 
   @media screen and (min-width: 768px) {
     padding-top: 32px;
@@ -271,7 +259,7 @@
   display: grid;
   gap: 16px;
   justify-content: center;
- 
+
   @media screen and (min-width: 768px) {
     display: flex;
   }
