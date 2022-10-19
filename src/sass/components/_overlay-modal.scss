@@ -12,7 +12,7 @@
   z-index: 200;
   transition: 0.3s all;
 
-  overflow-y: scroll;
+ 
 }
 
 /* Стилі модалки */
@@ -23,11 +23,25 @@
   visibility: hidden;
 
   /*  Центрируем и задаем z-index */
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 300; /* Має бути вищим ніж у підкладки*/
+
+  // position: fixed;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  // z-index: 300; /* Має бути вищим ніж у підкладки*/
+  // overflow-y: scroll;
+
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 300;
+  
+    // padding: 93px 15px;
+  
+    overflow-y: scroll;
+
 }
 
 /* Обгортка для позиціонування модалки */
