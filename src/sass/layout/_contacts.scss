@@ -83,7 +83,7 @@
 
   &__category {
     background-color: $btn-def-color;
-    display: inline-flex;
+    display: inline-block;
     padding: 0 25px;
     
 
@@ -156,22 +156,22 @@
     }
   }
 
-  &__ grid {
+  // &__ grid {
     
  
-    grid-template-columns: 216px;
+  //   grid-template-columns: 216px;
 
-    @media screen and (min-width: 768px) {
+  //   @media screen and (min-width: 768px) {
     
-      grid-template-columns: 176px;
-    }
+  //     grid-template-columns: 176px;
+  //   }
 
-    @media screen and (min-width: 1200px) {
+  //   @media screen and (min-width: 1200px) {
     
 
-      grid-template-columns: 288px;
-    }
-  }
+  //     grid-template-columns: 288px;
+  //   }
+  // }
 }
 
 .contacts-workday {
