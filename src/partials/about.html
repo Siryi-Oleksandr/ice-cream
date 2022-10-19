@@ -2,23 +2,42 @@
   <div class="container">
     <h2 class="about__title" id="how">tradition and love</h2>
     <h3 class="about__subtitle">how it’s made?</h3>
+
     <div class="about__tablet">
       <div class="about__background">
-        <img
-          class="about__img"
-          srcset="
-            ./images/content-img/about/about_480@1x.png  278w,
-            ./images/content-img/about/about_480@2x.png  556w,
-            ./images/content-img/about/about_768@1x.png  335w,
-            ./images/content-img/about/about_768@2x.png  670w,
-            ./images/content-img/about/about_1200@1x.png 490w,
-            ./images/content-img/about/about_1200@2x.png 980w
-          "
-          sizes="(min-width: 1200px) 490px, (min-width: 768px) 335px, (min-width: 320px) 278px, 100vw"
-          src="./images/content-img/about/about_480@1x.png"
-          alt="Корова"
-        />
+        <picture>
+          <source
+            srcset="
+              ./images/content-img/about/about_1200@1x.png 1x,
+              ./images/content-img/about/about_1200@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/content-img/about/about_768@1x.png 1x,
+              ./images/content-img/about/about_768@2x.png 2x
+            "
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <source
+            srcset="
+              ./images/content-img/about/about_480@1x.png 1x,
+              ./images/content-img/about/about_480@2x.png 2x
+            "
+            media="(max-width: 767px)"
+            type="image/png"
+          />
+          <img
+            class="about__img"
+            src="./images/content-img/about/about_480@1x.png"
+            alt="Корова"
+          />
+        </picture>
       </div>
+
       <div class="about__text-box">
         <div class="about__description">
           <p class="about__text">
@@ -38,6 +57,7 @@
             This is enough to choose ice cream and coffee for any mood!
           </p>
         </div>
+
         <div class="about__btn">
           <button class="btn js-open-modal" type="button" data-modal="3">
             Read more
