@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
          parentModal.classList.remove('active');
          overlay.classList.remove('active');
-         bodyScrollLock.classList.add('no-scroll');
+         bodyScrollLock.classList.remove('no-scroll');
       });
 
    }); // end foreach
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
     overlay.addEventListener('click', function() {
         document.querySelector('.modal.active').classList.remove('active');
         this.classList.remove('active');
-        bodyScrollLock.classList.add('no-scroll');
+        bodyScrollLock.classList.remove('no-scroll');
     });
 
 }); // end ready
