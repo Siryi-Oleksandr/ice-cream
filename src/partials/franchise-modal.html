@@ -23,20 +23,20 @@
         <input
           class="form__input"
           type="text"
-          id="name"
+          id="fr-name"
           name="user-name"
           placeholder="Alan Black"
           required
           pattern="^[a-zA-Z]+"
           title="Name must be only one word."
         />
-        <label class="form__label-text" for="name">Name*</label>
+        <label class="form__label-text" for="fr-name">Name*</label>
       </div>
 
       <div class="form__field">
         <input
           class="form__input"
-          type="tel"
+          type="fr-tel"
           id="tel"
           name="phone-number"
           placeholder="+380-1111111111"
@@ -44,32 +44,34 @@
           pattern="^(?=.*\d)(?!.*\s).*$"
           title="Must be only phone-number."
         />
-        <label class="form__label-text" for="tel">Phone*</label>
+        <label class="form__label-text" for="fr-tel">Phone*</label>
       </div>
 
       <div class="form__field">
         <input
           class="form__input"
           type="email"
-          id="email"
+          id="fr-email"
           name="email"
           placeholder="example@mail.com"
           required
           pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
           title="Must be only email."
         />
-        <label class="form__label-text" for="email">Email*</label>
+        <label class="form__label-text" for="fr-email">Email*</label>
       </div>
 
       <div class="form__field">
         <textarea
           class="form__textarea"
           name="coment"
-          id="message"
+          id="fr-message"
           rows="2"
           placeholder=" "
         ></textarea>
-        <label class="form__label-text form__label-text--message" for="message"
+        <label
+          class="form__label-text form__label-text--message"
+          for="fr-message"
           >Comment</label
         >
       </div>
