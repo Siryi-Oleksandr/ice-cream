@@ -1,28 +1,55 @@
 .scene {
   perspective: 600px;
+  width: 280px;
+  height: 432px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 224px;
+    height: 540px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+    height: 542px;
+  }
 }
 
 .card-3d__face {
-  display: block;
-  width: 280px;
-
   padding-top: 40px;
   padding-bottom: 16px;
   padding-left: 32px;
   padding-right: 32px;
 
   border-radius: 24px;
-  //   background: $txt-secondary-color;
+  background: $txt-secondary-color;
   //   box-shadow: 0px 8px 30px $shadow-color;
 
+  transition: box-shadow $animation;
+
   @media screen and (min-width: 768px) {
-    padding: 40px 24px;
-    width: 224px;
+    padding-left: 24px;
+    padding-right: 24px;
+    $item: 3;
+    flex-basis: calc(
+      (100% - (#{$project-grid-gap} * (#{$item} - 1))) / #{$item}
+    );
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 40px;
-    width: 368px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    $item: 3;
+    flex-basis: calc(
+      (100% - (#{$project-grid-gap-lg} * (#{$item} - 1))) / #{$item}
+    );
+  }
+
+  .scene:hover & {
+    box-shadow: 7px 13px 25px -6px rgb(0 0 0 / 72%);
   }
 }
 
@@ -37,7 +64,6 @@
 
   .scene:hover & {
     transform: rotateY(-180deg);
-    // box-shadow: 7px 13px 25px -6px rgb(0 0 0 / 72%);
   }
 }
 
@@ -45,7 +71,7 @@
   position: absolute;
   width: 100%;
 
-  background-color: rgb(174, 91, 91);
+  background-color: $bg-cream-color;
 
   backface-visibility: hidden;
 }
@@ -55,6 +81,6 @@
   width: 100%;
 
   backface-visibility: hidden;
-  background-color: #ccc;
+  background-color: $bg-cream-color;
   transform: rotateY(180deg);
 }

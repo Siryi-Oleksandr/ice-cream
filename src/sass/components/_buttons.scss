@@ -139,6 +139,9 @@
     border-radius: 10px;
   }
 
+  transition: background-color $animation;
+  transition: border-color $animation;
+
   &:hover {
     border-color: $btn-accent-color;
   }
@@ -208,6 +211,9 @@
     line-height: calc(17 / 14);
   }
 
+  transition: background-color $animation;
+  transition: border-color $animation;
+
   &:hover {
     color: $btn-accent-color;
   }
@@ -257,6 +263,9 @@
   border: none;
   outline: none;
 
+  transition: background-color $animation;
+  transition: transform $animation;
+
   cursor: url(../images/icon-img/cursor-hover.png), pointer;
 
   &:hover > .btn-arrow__icon {
@@ -278,6 +287,9 @@
   border: none;
   outline: none;
   color: $txt-white-color;
+
+  transition: background-color $animation;
+  transition: transform $animation;
 
   cursor: url(../images/icon-img/cursor-hover.png), pointer;
 
