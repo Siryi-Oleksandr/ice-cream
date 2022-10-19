@@ -16,14 +16,14 @@
   font-size: 20px;
   line-height: calc(28 / 20);
   margin-bottom: 29px;
-  min-width: 142px;
+  // min-width: 142px;
 
   @media screen and(min-width:768px) {
     margin-bottom: 31px;
     min-width: none;
   }
-
-}.ingr-form__wrap {
+}
+.ingr-form__wrap {
   position: relative;
   width: 132px;
   height: 132px;
@@ -62,7 +62,6 @@
     margin-bottom: 48px;
     gap: 20px;
   }
-
 }
 .ingr-form__item {
   position: relative;
@@ -88,9 +87,7 @@
   }
 }
 
-
 .ingr-form__amount {
-
   position: absolute;
   top: -2px;
   left: 50%;
@@ -113,7 +110,6 @@
     height: 53px;
     font-size: 12px;
     line-height: calc(28 / 12);
-
   }
 }
 
@@ -146,26 +142,6 @@
   |============================
 */
 
-// modal common
-
-// .modal {
-//   position: absolute;
-//   z-index: 3;
-//   top: 0;
-//   left: 50vw;
-//   transform: translateX(-50%);
-//   transform: translateY(-50%);
-//   width: 280px;
-//   padding: 28px;
-//   background: #fcfcfc;
-//   border: 2px solid #f8d24e;
-//   border-radius: 10px;
-//   @media screen and(min-width:768px) {
-//     width: 568px;
-//     padding: 32px 0;
-//   }
-// }
-
 .modal-close {
   position: fixed;
   top: 8px;
@@ -197,99 +173,4 @@
     height: 20px;
   }
 }
-// form common
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.form__header {
-  font-family: 'Seymour One';
-  font-weight: 400;
-  text-align: center;
-}
-.form__input {
-  width: 100%;
-  padding: 8px 12px;
-  margin-bottom: 12px;
-  background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
-  border-radius: 10px;
-  font-family: 'Montserrat';
-  color: $txt-primary-color;
-  font-size: 12px;
-  line-height: 140%;
-  transition: background-color $animation;
-  &::placeholder {
-    font-family: 'Montserrat';
-    color: $txt-primary-color;
-    font-size: 12px;
-    line-height: 140%;
-  }
-  &:not(:placeholder-shown):required:invalid {
-    background-color: rgba(255, 0, 0, 0.3);
-  }
-  
-  @media screen and(min-width:768px) {
-    margin-bottom: 16px;
-    width: 368px;
-  }
-}
-.form__input:hover,.form__input:focus {
-  border-color: #f8d24e;}
 
-
-.form__textarea {
-  width: 100%;
-  height: 64px;
-  padding: 8px 12px;
-  margin-bottom: 24px;
-  background: rgba(248, 210, 78, 0.1);
-  border: 1px solid #84a178;
-  border-radius: 10px;
-  font-family: 'Montserrat';
-  color: $txt-primary-color;
-  font-size: 12px;
-  line-height: 140%;
-  resize: none;
- 
-  &::placeholder {
-    font-family: 'Montserrat';
-    color: $txt-primary-color;
-    font-size: 12px;
-    line-height: 140%;
-  }
-  @media screen and(min-width:768px) {
-    margin-bottom: 32px;
-    width: 368px;
-    height: 84px;
-  }
-}
-.form__textarea:hover,:focus {
-  border-color: #f8d24e;}
-
-.form__btn {
-  @extend %btn;
-  font-size: 12px;
-  line-height: calc(15 / 12);
-  border: 2px solid $btn-def-color;
-  background-color: $btn-def-color;
-  cursor: url(../images/icon-img/cursor-hover.png), pointer;
-  margin-right: auto;
-  margin-left: auto;
-  transition: background-color $animation, border-color $animation,
-    color $animation;
-  &:hover {
-    border-color: $btn-accent-color;
-    background-color: $btn-accent-color;
-  }
-  &:focus {
-    outline-color: $btn-accent-color;
-    background-color: $btn-accent-color;
-    color: $txt-secondary-color;
-  }
-  @media screen and(min-width:768px) {
-    font-size: 14px;
-    line-height: calc(17 / 14);
-  }
-}

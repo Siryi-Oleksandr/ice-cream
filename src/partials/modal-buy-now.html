@@ -74,34 +74,48 @@
         </label>
       </div>
 
-      <input
-        class="buy-form__input"
-        type="text"
-        name="user-name"
-        placeholder="Name"
-        required
-        pattern="^[a-zA-Z]+"
-        title="Name must be only one word."
-      />
+      <div class="form__field form__field--buy">
+        <input
+          class="form__input"
+          type="text"
+          id="name"
+          name="user-name"
+          placeholder="Alan Black"
+          required
+          pattern="^[a-zA-Z]+"
+          title="Name must be only one word."
+        />
+        <label class="form__label-text" for="name">Name*</label>
+      </div>
 
-      <input
-        class="buy-form__input"
-        type="tel"
-        name="phone-number"
-        placeholder="Phone"
-        required
-        pattern="^(?=.*\d)(?!.*\s).*$"
-        title="Must be only phone-number."
-      />
+      <div class="form__field form__field--buy">
+        <input
+          class="form__input"
+          type="tel"
+          id="tel"
+          name="phone-number"
+          placeholder="+380-1111111111"
+          required
+          pattern="^(?=.*\d)(?!.*\s).*$"
+          title="Must be only phone-number."
+        />
+        <label class="form__label-text" for="tel">Phone*</label>
+      </div>
 
-      <textarea
-        class="buy-form__textarea"
-        name="coment"
-        rows="2"
-        placeholder="Comment"
-      ></textarea>
+      <div class="form__field form__field--buy">
+        <textarea
+          class="form__textarea"
+          name="coment"
+          id="message"
+          rows="2"
+          placeholder=" "
+        ></textarea>
+        <label class="form__label-text form__label-text--message" for="message"
+          >Comment</label
+        >
+      </div>
 
-      <button class="buy-form__btn" type="submit" data-mobile-buy-open>
+      <button class="form__btn" type="submit" data-mobile-buy-open>
         Submit
       </button>
     </form>

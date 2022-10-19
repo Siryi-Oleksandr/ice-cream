@@ -36,16 +36,16 @@
     background-image: url('../images/content-img/products-background/products-bg-1_480@2x.png');
   }
 
-  @media screen and (min-width: 481px) {
-    background-image: url('../images/content-img/products-background/products-bg_768@1x.png');
+  @media screen and (min-width: 480px) {
+    background-image: url('../images/content-img/products-background/products-bg_1200@1x.png');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/content-img/products-background/products-bg_768@2x.png');
+      background-image: url('../images/content-img/products-background/products-bg_1200@2x.png');
     }
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     background-image: url('../images/content-img/products-background/products-bg_1200@1x.png');
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
