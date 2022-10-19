@@ -5,7 +5,7 @@
         <use href="./images/icon-img/sprite.svg#close-blc"></use>
       </svg>
     </button>
-    <form class="fr-form" name="franchise">
+    <div class="fr-form">
       <h2 class="fr-form__header">
         Thank you for your interest in owning an Ice Cream shop
       </h2>
@@ -16,39 +16,64 @@
         fill out the contact information below and we will reach out for
         additional information. We appreciate your patience.
       </p>
-      <input
-        class="fr-form__input"
-        type="text"
-        name="user-name"
-        placeholder="Name"
-        required
-        pattern="^[a-zA-Z]+"
-        title="Name must be only one word."
-      />
-      <input
-        class="fr-form__input"
-        type="tel"
-        name="phone-number"
-        placeholder="Phone"
-        required
-        pattern="^(?=.*\d)(?!.*\s).*$"
-        title="Must be only phone-number."
-      />
-      <input
-        class="fr-form__input"
-        type="email"
-        name="email"
-        placeholder="Email"
-        required
-        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-        title="Must be only email."
-      />
-      <textarea
-        class="fr-form__textarea"
-        name="coment"
-        rows="2"
-        placeholder="Comment"
-      ></textarea>
+    </div>
+
+    <form class="form" name="franchise">
+      <div class="form__field">
+        <input
+          class="form__input"
+          type="text"
+          id="name"
+          name="user-name"
+          placeholder="Alan Black"
+          required
+          pattern="^[a-zA-Z]+"
+          title="Name must be only one word."
+        />
+        <label class="form__label-text" for="name">Name*</label>
+      </div>
+
+      <div class="form__field">
+        <input
+          class="form__input"
+          type="tel"
+          id="tel"
+          name="phone-number"
+          placeholder="+380-1111111111"
+          required
+          pattern="^(?=.*\d)(?!.*\s).*$"
+          title="Must be only phone-number."
+        />
+        <label class="form__label-text" for="tel">Phone*</label>
+      </div>
+
+      <div class="form__field">
+        <input
+          class="form__input"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@mail.com"
+          required
+          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          title="Must be only email."
+        />
+        <label class="form__label-text" for="email">Email*</label>
+      </div>
+
+      <div class="form__field">
+        <textarea
+          class="form__textarea"
+          name="coment"
+          id="message"
+          rows="2"
+          placeholder=" "
+        ></textarea>
+        <label class="form__label-text form__label-text--message" for="message"
+          >Comment</label
+        >
+      </div>
+
       <button class="fr-form__button" type="submit">Submit</button>
     </form>
   </div>
