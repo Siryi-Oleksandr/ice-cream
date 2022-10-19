@@ -248,3 +248,23 @@
 
 // .contacts-address__disabled {
 // }
+
+.contacts__map {
+  display: flex;
+  justify-content: center;
+}
+
+.contacts__map--fr {
+  width: 216px;
+  height: 146px;
+  border-radius: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 176px;
+    height: 184px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 286px;
+    height: 198px;
+  }
+}
