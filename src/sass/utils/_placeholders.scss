@@ -18,4 +18,6 @@
   line-height: calc(18 / 14);
 
   border-radius: 10px;
+
+  transition: background-color $animation, border-color $animation;
 }
