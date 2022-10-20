@@ -28,8 +28,10 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1.5);
   z-index: 300; /* Має бути вищим ніж у підкладки*/
+
+  transition: opacity $animation, visibility $animation, transform $animation;
 }
 
 /* Обгортка для позиціонування модалки */
@@ -40,8 +42,14 @@
 
 /* Стилі для активних класів підложки та вікна */
 
-.modal.active,
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
+}
+
 .overlay.active {
   opacity: 1;
   visibility: visible;
+  overflow: hidden;
 }
