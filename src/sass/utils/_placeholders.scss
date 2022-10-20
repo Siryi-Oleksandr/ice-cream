@@ -19,6 +19,5 @@
 
   border-radius: 10px;
 
-  transition: background-color $animation;
-  transition: border-color $animation;
+  transition: background-color $animation, border-color $animation;
 }
