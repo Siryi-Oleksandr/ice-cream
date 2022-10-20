@@ -14,19 +14,16 @@
 
   //desctop
   @media screen and(min-width:1200px) {
-    padding-top: 30px;
+    padding-top: 55px;
     padding-bottom: 43px;
   }
 }
 
 .advantages__list {
-
-  @media screen and(max-width:767px){
+  @media screen and(max-width:767px) {
     padding-left: 25px;
     padding-right: 25px;
-
   }
-
 
   //tablet
   @media screen and(min-width:768px) {
@@ -83,10 +80,9 @@
   background-color: $bg-png-color;
 
   transition-property: background-color, transform;
-    transition-duration: 2500ms;
-    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    transition-delay: 0;
-
+  transition-duration: 2500ms;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition-delay: 0;
 
   //tablet
 
@@ -100,12 +96,10 @@
   }
 }
 
-.advantages__item:hover::before{
-  
-    background-color: white;
-    transform: rotate(720deg);
+.advantages__item:hover::before {
+  background-color: white;
+  transform: rotate(720deg);
 }
-
 
 .cow__img::before {
   background-image: url('../images/content-img/advantages/advantages-1@1x.png');
@@ -113,12 +107,12 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: url('../images/content-img/advantages/advantages-1@2x.png');
-    }
+  }
 
-    background-repeat: no-repeat;
-      background-position: center;
-      background-size: 36px 36px;
-    }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 36px 36px;
+}
 
 .gantel__img::before {
   background-image: url('../images/content-img/advantages/advantages-2@1x.png');
