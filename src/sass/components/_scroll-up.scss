@@ -1,0 +1,38 @@
+#back-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+
+  width: 50px;
+  height: 50px;
+
+  z-index: 100000;
+}
+#back-top a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  background-color: $btn-disabled-color;
+  color: $txt-primary-color;
+
+  transform: scale(1);
+
+  transition: background-color $animation, scale $animation;
+}
+
+#back-top a:hover,
+#back-top a:focus {
+  outline: none;
+  background-color: $btn-def-color;
+  color: $txt-white-color;
+
+  transform: scale(1.2);
+}
+
+.overlay.active ~ #back-top {
+  display: none;
+}
