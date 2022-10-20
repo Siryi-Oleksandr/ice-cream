@@ -1,13 +1,8 @@
 .footer {
-  padding-top: 20px;
-  padding-bottom: 62px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: $bg-primary-color;
-  @media screen and (min-width: 768px) {
-    padding-bottom: 13px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 11px;
-  }
+
 
   &__group {
     width: 234px;
@@ -85,11 +80,13 @@
   }
 }
 
-.footer-social__item:hover {
+.footer-social__item:hover,
+.footer-social__item:focus {
   transform: scale(1.2);
 }
 
-.footer-social__link:hover {
+.footer-social__link:hover,
+.footer-social__link:focus {
   border-radius: 50%;
   background-color: $txt-secondary-color;
   box-shadow: 10px 0 12px -7px $txt-secondary-color;
@@ -114,7 +111,7 @@
 // contact
 .footer-contact {
   display: flex;
-  font-style: normal;
+
   font-weight: 700;
   font-size: 12px;
   justify-content: right;
@@ -123,7 +120,7 @@
 
   // горизонтальная линия на весь контейнер
 
-  margin-bottom: 40px;
+  
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -138,16 +135,19 @@
 
 .footer-social-wrapper {
   border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 40px;
 
   @media screen and (min-width: 768px) {
     border-bottom: none;
     display: flex;
     flex-direction: column;
-    margin-top: 88px;
+    padding-top: 88px;
+    padding-bottom: 0px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-top: 0px;
+    padding-bottom: 0px;
   }
 }
 
@@ -166,7 +166,7 @@
   width: 280px;
   text-align: center;
   margin: auto;
-  margin-top: 16px;
+  padding-top: 16px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
