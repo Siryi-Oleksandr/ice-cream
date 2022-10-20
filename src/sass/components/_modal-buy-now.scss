@@ -111,18 +111,12 @@
   &--color-br {
     border: 2px solid #d6936d;
   }
-
-  
 }
-
-// .buy-form__check:hover + .buy-form__item{
-//   transform: scale(1.1);
-// }
 
 .buy-form__pos {
   position: relative;
   display: flex;
-  
+
   @media screen and(max-width:767px) {
     &:last-child {
       margin-bottom: 30px;
@@ -130,8 +124,7 @@
   }
 }
 
-.buy-form__check:checked+.buy-form__item {
-  
+.buy-form__check:checked + .buy-form__item {
   transform: scale(1.1);
   &--color-gr {
     background-color: #aec6a5;
@@ -147,8 +140,6 @@
     background-color: #d6936d;
     box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
   }
-
-   
 }
 
 .buy-form__box {
