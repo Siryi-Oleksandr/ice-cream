@@ -57,16 +57,11 @@
   line-height: 1.5;
   text-align: center;
   margin-bottom: 20px;
-  //   padding-top: 28px;
-  //   padding-bottom: 20px;
-  //   padding-left: 30px;
-  //   padding-right: 29px;
 
   @media screen and(min-width:768px) {
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 32px;
-    // padding: 32px 123px;
   }
 }
 
@@ -91,19 +86,9 @@
   border: none;
 
   border-radius: 10px;
-
-  //   position: relative;
-  //   padding-left: 60px;
-  //   padding-right: 60px;
-  // padding: 32px 60px;
 }
 
 .read-modal__text {
-  //   margin-top: 20px;
-  //   margin-bottom: 28px;
-  //   margin-left: 28px;
-  //   margin-right: 28px;
-
   font-weight: 400;
   font-size: 14px;
   line-height: calc(20 / 14);
@@ -113,9 +98,5 @@
   @media screen and (min-width: 768px) {
     font-size: 16px;
     line-height: calc(22 / 16);
-    // margin-right: 60px;
-    // margin-left: 60px;
-    // margin-top: 32px;
-    // margin-bottom: 32px;
   }
 }
