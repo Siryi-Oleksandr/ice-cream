@@ -9,7 +9,6 @@
     padding-bottom: 11px;
   }
 
-
   &__group {
     width: 234px;
     display: flex;
@@ -17,7 +16,7 @@
     gap: 16px;
     margin-bottom: 42px;
     color: $txt-secondary-color;
-  
+
     @media screen and (min-width: 768px) {
       display: flex;
       flex-direction: wrap;
@@ -28,11 +27,8 @@
     @media screen and (min-width: 1200px) {
       padding-bottom: 54px;
       width: 504px;
-
     }
-
   }
-
 
   &__subtitle-lg {
     width: 250px;
@@ -41,13 +37,13 @@
     line-height: 1.22;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-  
+
     @media screen and (min-width: 768px) {
       width: 352px;
       font-size: 26px;
       line-height: 1.23;
     }
-  
+
     @media screen and (min-width: 1200px) {
       width: 504px;
     }
@@ -60,7 +56,7 @@
     line-height: 1.2;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-  
+
     @media screen and (min-width: 768px) {
       width: 340px;
       font-size: 48px;
@@ -80,9 +76,6 @@
       border-bottom: 1px solid #e1e1e1;
     }
   }
-
-
-  
 }
 
 .footer-social__item {
@@ -99,7 +92,7 @@
 .footer-social__link:hover {
   border-radius: 50%;
   background-color: $txt-secondary-color;
-  box-shadow: 10px 0 12px -7px  $txt-secondary-color;
+  box-shadow: 10px 0 12px -7px $txt-secondary-color;
   transition: transform $animation;
 }
 
@@ -118,7 +111,6 @@
   }
 }
 
-
 // contact
 .footer-contact {
   display: flex;
@@ -130,7 +122,7 @@
   color: $txt-primary-color;
 
   // горизонтальная линия на весь контейнер
-  
+
   margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
@@ -162,6 +154,12 @@
 .footer-contact__link {
   color: rgba(252, 252, 252, 1);
   cursor: url(../images/icon-img/cursor-hover.png), pointer;
+  transition: color $animation;
+
+  &:hover,
+  &focus {
+    color: $txt-accent-color;
+  }
 }
 
 .footer-aside__title {
@@ -187,8 +185,6 @@
   }
 }
 
-
-
 .footer-social__link {
   display: flex;
   justify-content: center;
@@ -208,4 +204,3 @@
   transform: scale(1.2);
   fill: $txt-secondary-color;
 }
-
