@@ -23,13 +23,13 @@
   flex-direction: column;
 
   text-align: center;
-
+  
   background-repeat: repeat-x;
   background-position: center;
   background-size: cover;
 
   background-image: url('../images/content-img/products-background/products-bg_1920@1x.png');
-
+  background-size: 1920px;
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -61,14 +61,13 @@
 
   &__title {
     font-family: 'Seymour One';
-    font-style: normal;
-    font-weight: 400;
+
     font-size: 30px;
     line-height: calc(38px / 30px);
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #131313;
+    color: $txt-primary-color;
 
     margin-bottom: 140px;
 
@@ -239,7 +238,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-    color: #131313;
+    color: $txt-primary-color;
 
     margin-bottom: 40px;
 
@@ -253,12 +252,11 @@
   }
 
   &__description-text {
-    font-style: normal;
-    font-weight: 400;
+
     font-size: 14px;
     line-height: 176%;
     letter-spacing: 0.04em;
-    color: #131313;
+    color: $txt-primary-color;
     margin-bottom: 90px;
 
     @media screen and (min-width: 768px) {
