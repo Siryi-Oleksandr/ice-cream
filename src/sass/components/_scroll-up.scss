@@ -19,6 +19,8 @@
   background-color: $btn-disabled-color;
   color: $txt-primary-color;
 
+  cursor: url(../images/icon-img/cursor-hover.png), pointer;
+
   transform: scale(1);
 
   transition: background-color $animation, scale $animation;
@@ -33,6 +35,7 @@
   transform: scale(1.2);
 }
 
-.overlay.active ~ #back-top {
+.overlay.active ~ #back-top,
+.menu.is-open ~ #back-top {
   display: none;
 }
