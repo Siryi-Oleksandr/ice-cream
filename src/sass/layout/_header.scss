@@ -3,7 +3,8 @@
   border-radius: 50%;
 }
 
-.logo:hover {
+.logo:hover, 
+ .logo:focus {
   animation-name: spin;
   animation-duration: 1.75s;
   animation-timing-function: linear;
