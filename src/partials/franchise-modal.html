@@ -39,8 +39,10 @@
           type="tel"
           id="fr-tel"
           name="phone-number"
-          placeholder="+380-1111111111"
+          placeholder="+3801111111111"
           required
+          minlength="8"
+          maxlength="14"
           pattern="^(?=.*\d)(?!.*\s).*$"
           title="Must be only phone-number."
         />
@@ -55,6 +57,7 @@
           name="email"
           placeholder="example@mail.com"
           required
+          minlength="6"
           pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
           title="Must be only email."
         />
