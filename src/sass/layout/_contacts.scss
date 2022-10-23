@@ -54,6 +54,12 @@
   }
 }
 
+.contacts__item {
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 32px) / 3);
+  }
+}
+
 .contacts__category {
   background-color: $btn-def-color;
   display: inline-block;
